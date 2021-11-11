@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Inter:wght@400;500&display=swap');
+
+@font-face {
+	font-family: Monument800;
+	src: url(../font/Monument\ Extended\ Ultrabold\ 800.otf)
+}
+
+@font-face {
+	font-family: Monument400;
+	src: url(../font/Monument\ Extended\ Regular\ 400.otf)
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,li{
+  list-style: none;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+/*font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: Monument800;
+font-family: Monument400;
+*/
+
+.ativo{
+  /* display: none; */
+  transition: 1s;
+  opacity: 0;
+}
+
+
+
+.animaRotate {
+  transform: rotate(360deg);
+  animation: animaRotate 60s forwards;
+}
+
+@keyframes animaRotate {
+  to {
+    transform: initial;
+  }
+}
+
+
+.animaLeft {
+  transform: translatex(100vh);
+  animation: animaLeft 1s forwards;
+}
+
+@keyframes animaLeft {
+  to {
+    transform: initial;
+  }
+}
+
+
+.animaBlur {
+  opacity: 0;
+  animation: animaBlur 3s forwards;
+}
+
+@keyframes animaBlur {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+.animaNome {
+  opacity: 0;
+  animation: animaNome 2s forwards;
+}
+
+@keyframes animaNome {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+
+

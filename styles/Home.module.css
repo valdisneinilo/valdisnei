@@ -1,15 +1,25 @@
 .main {
   min-height: 100vh;
-  padding: 2rem 1rem;
-  /* flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+  padding: 1rem 8rem;
   background-color: #000;
   color: #fff;
-
 }
+
+@media (max-width: 750px) {
+	.main {
+		min-height: 100vh;
+		padding: 5rem 1rem;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: #000;
+		color: #fff;
+	
+	}
+}
+
 
 
 
@@ -18,14 +28,14 @@
 	font-style: normal;
 	font-weight: 800;
 	font-size: 1.1;
-	line-height: 24px;
-	letter-spacing: 0.2px;
-	width: 220px;
+	line-height: 1.5rem;
+	letter-spacing: 0.0125rem;
+	width: 13.75rem;
 	background: linear-gradient(92.33deg, #DFFFD7 10.39%, #FF82A7 105.67%);
 	background-clip: border-box;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	margin-bottom: 14px;
+	margin-bottom: 0.875rem;
 }
 
 
@@ -40,71 +50,85 @@
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  margin: 0 23px;
+  font-size: .875rem;
+  line-height: 1.0625rem;
+  margin: 0 1.4375rem;
   margin-bottom: 2.5rem;
 	cursor: pointer;
   
 }
 
+
 .ellipse1{
   position: absolute;
-	width: 415px;
-	height: 300px;
+	width: 25.9375rem;
+	height: 18.75rem;
 	left: 10%;
 	top: 0;
 	background: linear-gradient(292.39deg, rgba(13, 251, 208, 0.2) -16.4%, rgba(13, 165, 251, 0.2) 73.45%);
-	filter: blur(150px);
+	filter: blur(9.375rem);
+
 }
 
 .ellipse2{
   position: absolute;
-	width: 415px;
-	height: 300px;
+	width: 25.9375rem;
+	height: 18.75rem;
 	left: 50%;
 	top: 50%;
 	background: linear-gradient(292.39deg, rgba(13, 251, 208, 0.2) -16.4%, rgba(13, 165, 251, 0.2) 73.45%);
-	filter: blur(150px);
+	filter: blur(9.375rem);
 }
 
 .ellipse3{
   position: absolute;
-	width: 415px;
-	height: 300px;
+	width: 25.9375rem;
+	height: 18.75rem;
 	left: 40%;
 	top: 20%;
   background: rgba(255, 185, 186, 0.2);
-	filter: blur(100px);
+	filter: blur(6.25rem);
 }
 
 .ellipse4{
   position: absolute;
-	width: 415px;
-	height: 300px;
+	width: 25.9375;
+	height: 18.75rem;
 	left: 50%;
 	top: 50%;
 	background: linear-gradient(292.39deg, rgba(13, 251, 208, 0.2) -16.4%, rgba(13, 165, 251, 0.2) 73.45%);
-	filter: blur(150px);
+	filter: blur(9.375rem);
 }
 
-@media (max-width: 900px) {
-  .ellipse4{
-		left: 20%;
+@media (max-width: 750px) {
+	.ellipse1{
+		position: relative;
+		width: 6.25rem;
+		height: 18.75rem;
+		left: 0;
+		top: 0;
+		background-color: chartreuse;
 	}
-	.ellipse2{
-		left: 20%;
-	}
+	
+}
 
-	.ellipse3{
-		margin-left: 0;
+
+@media (max-width: 750px) {
+	.ellipse1{
+		position: absolute;
+		width: 25.9375;
+		height: 18.75rem;
+		left: 50%;
+		top: 50%;
+		background-color: chartreuse;
 	}
 }
 
 
 .home{
-  max-width: 1400px;
+  max-width: 100rem;
   margin: 0 auto;
+
 }
 
 
@@ -118,17 +142,18 @@
 
 }
 
+
 .tituloContainer h2{
-  margin-top: 148px;
+  margin-top: 9.25rem;
 	font-family: Monument400;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 0.75rem;
 	line-height: 0.875rem;
 	letter-spacing: 1px;
-	padding: 11px 33px;
+	padding: 0.1rem;
 	background: #0B3344;
-	max-width: 300px;
+	max-width: 18.75rem;
 	border-radius: 1rem;
 	background: linear-gradient(#222, #222), 
 	linear-gradient(272.92deg, rgba(103, 255, 219, 0.41) -20.44%, rgba(0, 0, 0, 0) 134.61%);
@@ -139,17 +164,6 @@
 
 }
 
-@media (max-width: 1000px) {
-  .tituloContainer h2{
-		font-size: 0.75rem;
-		line-height: 0.875rem;
-		padding: 5px 20px;
-		background: #0B3344;
-		max-width: 200px;
-	
-	}
-}
-
 .tituloContainer h1{
 	width: 60.25rem;
 	font-family: Monument800;
@@ -158,18 +172,22 @@
 	font-size: 10rem;
 	text-align: right;
   margin: 0;
+
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 750px) {
   .tituloContainer h1{
-		width: 40.25rem;
-		font-size: 6rem;
+		max-width: 200px;
+		font-size: 4rem;
+		background: chartreuse;
+
 	}
 }
 
 
 .linha1{
   border: 1px solid;
-	width: 300px;
+	width: 18.75rem;
   margin-top: -200px;
 	background: linear-gradient(#222, #222), 
 	linear-gradient(to right, rgba(103, 255, 219, 0.41) -20.44%, rgba(0, 0, 0, 0) 134.61%);
@@ -177,6 +195,7 @@
 	background-repeat: no-repeat;
 	border: 1px solid transparent;
 	margin-left: 1rem;
+
 }
 
 .linha2{
@@ -196,6 +215,7 @@
 .chamadaContato{
 	font-family: 'Inter', sans-serif;
 	font-style: normal;
+
 }
 
 .chamadaContato p{
@@ -218,12 +238,14 @@
 	margin-bottom: 162px;
 	border: none;
 	cursor: pointer;
+
 }
 
 .quemSou{
   display: flex;
   justify-content: space-between;
 	flex-wrap: wrap;
+
 }
 
 
@@ -235,6 +257,7 @@
 	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 0.2px;
+
 }
 
 
@@ -245,11 +268,14 @@
 .redes{
   display: flex;
 	width: 445px;
+
 }
 .redes div{
   padding: 5px ;
   margin-right: 25px;
   cursor: pointer;
+	background-color: black;
+
 }
 
 .textoCirculo{
@@ -265,6 +291,7 @@
 	letter-spacing: 0.2px;
 	opacity: .08;
 	text-align: right;
+
 }
 
 .linha3{
@@ -412,61 +439,86 @@
 	border: 1px solid transparent;
 }
 
-.faqPerguntas {
-	background: linear-gradient(#111, #111), 
-	linear-gradient(to bottom, rgba(103, 255, 219, 0.41) -20.44%, rgba(0, 0, 0, 0) 134.61%);
-	background-origin: padding-box, border-box;
-	background-repeat: no-repeat;
-	border: 1px solid transparent;
-	margin-left: 1rem;
-	margin-right: 1rem;
-	border-radius: .5rem;
+.faq {
+  position: relative;
+
 }
 
+.faq > div{
+  display: flex;
+	flex-wrap: wrap;
+
+}
+
+.faq p {
+	width: 445px;
+  font-family: Inter;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.2px;
+  margin-right: 3.125rem;
+
+
+}
+
+
+
+
+
+.faqPerguntas {
+
+
+}
+
+
 .faqPerguntas > div{
-	padding: .2rem;
-	margin-bottom: 1rem;
-	display: flex;
-	flex-direction: column;
+
 }
 
 .faqPerguntas dt{
-	padding: .2rem;
-  font-family: Inter;
+	font-family: Inter;
 	font-style: normal;
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 26px;
+	font-size: 16px;
+	line-height: 24px;
 	letter-spacing: 0.2px;
-	cursor: pointer;
+	color: #FFFFFF;
 }
 
-.faqPerguntas dt::after{
-	content: "↴";
-	margin-left: 2rem;
+.faqPerguntas dt::before{
+	content: "";
+	display: inline-flex;
+	margin-right: 1rem;
+	border-radius: 100%;
+	width: 5px;
+	height: 5px;
+	background: #FFFFFF;
 }
 
 .faqPerguntas dd {
-	margin-left: 2rem;
-  font-family: Inter;
+	width: 417px;
+	font-family: DM Sans;
 	font-style: normal;
-	font-weight: 500;
-	font-size: 14px;
+	font-weight: normal;
+	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 0.2px;
-  transition: 1s;
+	color: rgba(255, 255, 255, 0.8);
+}
 
+.linhaFaq {
+	width: 713px;
+	height: 0px;
+	border: 1px solid #2E2E2E;
+	margin-top: 17px;
+	margin-bottom: 15px;
 }
 
 .faqPerguntas span{
 	text-decoration: line-through;
 }
-
-
-
-
-
-
 
 
 
@@ -634,3 +686,480 @@
   
 }
 
+
+
+
+/* **************************************************************************************************************************************************************************************************************** */
+
+/* RESPONSIVO TABLET */
+
+@media (max-width: 1000px) {
+
+	.header ul{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-bottom: 1px solid #2B2639;
+	}
+	
+	.header ul li{
+		font-size: .7rem;
+		line-height: 1rem;
+		margin: 0 1.2rem;
+		margin-bottom: 2.5rem;
+	}
+
+	.ellipse2{
+		left: 5%;
+		top: 10%;
+	}
+	
+	.ellipse3{
+
+		left: 30%;
+		top: 10%;
+
+	}
+	
+	.ellipse4{
+
+		left: 30%;
+		top: 25%;
+	}
+
+	.tituloContainer div{
+		max-width: 18.75rem;
+	}
+
+	.home{
+		max-width: 100rem;
+		margin: 0 auto;
+	}
+	
+	.tituloContainer{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+		position: relative;
+	
+	}
+	
+	.tituloContainer h2{
+		margin-top: 5rem;
+		font-size: 0.5rem;
+		line-height: 0.1rem;
+		padding: .3rem;
+		background: #0B3344;
+		max-width: 10rem;
+	}
+
+	.tituloContainer h1{
+		width: 25rem;
+		font-size: 4rem;
+
+	}
+
+	.chamadaContato p{
+		width: 18.75rem;
+		font-size: .875rem;
+		line-height: 1.2rem;
+	}
+	
+	.chamadaContato button{
+		font-size: .875rem;
+		line-height: 1rem;
+		width: 10.75rem;
+		height: 2.5rem;
+		margin-top: 1.6875rem;
+		margin-bottom: 5rem;
+	}
+
+	.quemSouTexto p {
+		width: 18.75rem;
+		font-size: .875rem;
+		line-height: 1.425rem;
+		letter-spacing: 0.2px;
+	}
+	
+	.textoCirculo{
+		right: 4rem;
+	}
+	
+	.linha3{
+		margin-top: 0;
+		margin-left: 20%;
+		margin-bottom: 40px;
+	}
+	
+
+	
+	.imgProjeto{
+		margin: 0.2rem;
+	}
+	
+	.textoProjeto{
+		margin: 0.2rem;
+	}
+	
+	
+	.textoProjeto h3{
+		font-size: .875rem;
+	}
+	
+	.textoProjeto p {
+		font-size: .875rem;
+		letter-spacing: 0.2px;
+		color: rgba(255, 255, 255, 0.9);
+	}
+	
+
+  
+	
+	.tecnologias{
+		margin-top: 5rem;
+		position: relative;
+	
+	}
+	
+	.tecnologiasDiv{
+		display: flex;
+		flex-wrap: wrap;
+		background-color: lightcoral;
+	
+	}
+	
+	.tecnologias p{
+		width: 445px;
+		font-family: Inter;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 26px;
+		letter-spacing: 0.2px;
+		background-color: lightblue;
+	}
+	
+	.listaTec{
+		text-align: left;
+		max-width: 300px;
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+		margin-left: 50px;
+		background-color: khaki;
+	}
+	
+	.listaTec li{
+		padding: 10px;
+		font-size: 1.5rem;
+	}
+	
+	
+	
+	.nomeArte2{
+		font-family: Monument800;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 5rem;
+		letter-spacing: 0.2px;
+		opacity: .08;
+		text-align: right;
+		background-color: lawngreen;
+	
+	}
+	
+	.linha4{
+		border: 1px solid;
+		margin-top: 10px;
+		width: 300px;
+		margin-left: 50%;
+		margin-bottom: 90px;
+		background: linear-gradient(#222, #222), 
+		linear-gradient(to right, rgba(103, 255, 219, 0.41) -20.44%, rgba(0, 0, 0, 0) 134.61%);
+		background-origin: padding-box, border-box;
+		background-repeat: no-repeat;
+		border: 1px solid transparent;
+	}
+	
+	.faq {
+		position: relative;
+	
+	}
+	
+	.faq > div{
+		display: flex;
+		flex-wrap: wrap;
+		background-color: lightcoral;
+	
+	}
+	
+	.faq p {
+		width: 445px;
+		font-family: Inter;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 26px;
+		letter-spacing: 0.2px;
+		background-color: lightblue;
+		margin-right: 3.125rem;
+	
+	
+	}
+	
+	
+	
+	
+	
+	.faqPerguntas {
+		background-color: khaki;
+	
+	
+	}
+	
+	@media (max-width: 1000px) {
+		.faqPerguntas {
+			width: 445px;
+		}
+	}
+	
+	.faqPerguntas > div{
+	
+	}
+	
+	.faqPerguntas dt{
+		font-family: Inter;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		letter-spacing: 0.2px;
+		color: #FFFFFF;
+	}
+	
+	.faqPerguntas dt::before{
+		content: "";
+		display: inline-flex;
+		margin-right: 1rem;
+		border-radius: 100%;
+		width: 5px;
+		height: 5px;
+		background: #FFFFFF;
+	}
+	
+	.faqPerguntas dd {
+		width: 417px;
+		font-family: DM Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 26px;
+		letter-spacing: 0.2px;
+		color: rgba(255, 255, 255, 0.8);
+	}
+	
+	.linhaFaq {
+		width: 713px;
+		height: 0px;
+		border: 1px solid #2E2E2E;
+		margin-top: 17px;
+		margin-bottom: 15px;
+	}
+	
+	.faqPerguntas span{
+		text-decoration: line-through;
+	}
+	
+	
+	
+	
+	@media (max-width: 1000px) {
+	
+		.linhaFaq {
+			width: 445px;
+	
+		}
+	}
+	
+	
+	
+	
+	
+	
+	.formCont{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 2rem 0;
+		max-width: 1400px;
+		margin: 0 auto;
+	
+	}
+	
+	
+	.textForm h2 {
+		width: 620px;
+		font-family: Monument400;
+		font-weight: 400;
+		font-size: 72px;
+		line-height: 115px;
+		letter-spacing: -5px;
+		background: linear-gradient(270.57deg, #E7B2AB -47.05%, #7B83CA 142.32%);
+		background-clip: border-box;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	
+	.textForm p{
+		width: 419px;
+		font-family: DM Sans;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 26px;
+		letter-spacing: 0.2px;
+		color: rgba(26, 26, 37, 0.8);
+		text-align: left;
+	}
+	
+	.containerformulario{
+		display: flex;
+		justify-content: center;
+	}
+	.formulario{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-top: 50px;
+	}
+	
+	.formulario input, .formulario select{
+		font-family:'DM Sans', sans-serif;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.2px;
+		color: #37424D;
+		padding: 1rem;
+		border: none;
+		background: none;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+		width: 393px;
+	
+	}
+	
+	.formulario input:hover, .formulario select:hover, .formulario input:focus, .formulario select:focus{
+		outline: none;
+		
+	}
+	
+	.formulario input:focus, .formulario select:focus{
+		border-color: #E7B2AB;
+	}
+	
+	
+	
+	.formulario button {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+		color:#fff;
+		width: 214px;
+		height: 60px;
+		border-radius: 8px;
+		margin-top: 27px;
+		border: none;
+		cursor: pointer;
+		background: #000;
+		margin-bottom: 1rem;
+	}
+	
+	.contatos>p{
+		font-family: DM Sans;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		letter-spacing: 0.2px;
+	}
+	
+	.contatos div{
+		margin-top: .5rem;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2rem;
+	
+	}
+	
+	.contatos>div p{
+		font-family: DM Sans;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 21px;
+		letter-spacing: 0.2px;
+	}
+	
+	.footer{
+		display: flex;
+		max-width: 1400px;
+		margin: 0 auto;
+		justify-content: space-between;
+	
+	}
+	
+	.footer p{
+		font-family: DM Sans;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 21px;
+		letter-spacing: 0.2px;
+		padding: 65px;
+		text-align: right;
+	}
+	
+	.footer h2{
+		font-family: Monument800;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 21px;
+		letter-spacing: 0.2px;
+		padding: 65px;
+	}
+	
+	.footer span{
+		font-family: Monument800;
+	
+	}
+	
+	
+	/* anti span */
+	.nao{
+		visibility: hidden;
+		position: absolute;
+		height: 0px;
+	}
+	
+	/* anti span */
+	
+	
+	@media (max-width: 1000px) {
+		
+	}
+	
+	
+	
+	
+	/* **************************************************************************************************************************************************************************************************************** */
+	
+	/* RESPONSIVO TABLET */
+	
+	@media (max-width: 1000px) {
+		
+	}
+	
+}

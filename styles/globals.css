@@ -41,8 +41,8 @@ font-family: Monument400;
 */
 
 .ativo{
-  /* display: none; */
   transition: 1s;
+  display: none;
   opacity: 0;
 }
 

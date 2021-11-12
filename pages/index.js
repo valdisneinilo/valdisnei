@@ -255,56 +255,74 @@ export default function Home() {
                 <li>MySQL</li>
                 {/* <div class="linha4"></div> */}
               </ul>
-              <div className={styles.nomeArte2Cont}>
+             
+            </div>
+            <div className={styles.nomeArte2Cont}>
                 <div className={styles.nomeArte2}>Full Stack Developer</div>
                 <div className={styles.ellipse4  + ' animaBlur'}></div>
               </div>
-            </div>
             <div className={styles.linha4 + ' animaLeft'}></div>
 
           </section>
 
           <section className={styles.faq} id="faq">
             <h2 className={styles.subtitulo}>Perguntas Frequentes</h2>
-            <dl className={styles.faqPerguntas}>
-              <div>
-                <dt onClick={handleRes}>Por que me contratar?</dt>
-                <dd className="ativo " > <span> Por que preciso de dinheiro</span> kkk🤣. Desenvolvo sites e sistemas 100% profissionais e personnalizados, construo todo seu projeto do absoluto zero e de acordo com sua necessidade.</dd>
-              </div>
-    
-              <div>
-                <dt onClick={handleRes}>Posso parcelar o pagamento?</dt>
-                <dd className="ativo">Sim! Você pode parcelar no cartão de crédito.</dd>
-              </div>
-
-              <div>
-                <dt onClick={handleRes}>Você cria E-commerce? (Loja Virtual)</dt>
-                <dd className="ativo"> Sim! desenvolvo lojas virtuais de qualidade e 100% personalizadas.</dd>
-              </div>
-
-              <div>
-                <dt onClick={handleRes}>Você desenvolve uma Rest API para meu projeto? </dt>
-                <dd className="ativo"> Sim! desenvolvo sua API em Node.JS.</dd>
-              </div>
-
-              <div>
-                <dt onClick={handleRes}>Você cria landing page?</dt>
-                <dd className="ativo"> Sim! desenvolvo landing pages voltadas diretamente para altas conversões.</dd>
-              </div>
-
-              
-              <div>
-                <dt onClick={handleRes}>Preciso de um site para minha empresa, você cria sites institucionais?</dt>
-                <dd className="ativo"> Sim! desenvolvo seu site, com a idente visual de sua empresa.</dd>
-              </div>
-
-              <div>
-                <dt onClick={handleRes}>Na contratação do serviço está incluso domínio e hospedagem?</dt>
-                <dd className="ativo">Não, é necessário que o cliente já possua domínio e hospedagem. Caso cliente não possua, irei auxiliá-lo.</dd>
-              </div>
-
+            <div>
             
-            </dl>
+              <p>Se você não conseguir encontrar uma resposta para sua pergunta em nosso FAQ, você pode nos contatar. Responderemos em breve! </p>
+              <dl className={styles.faqPerguntas}>
+                <div>
+                  <dt onClick={handleRes}>Por que me contratar?</dt>
+                  <dd className="ativo " > <span> Por que preciso de dinheiro</span> kkk🤣. Desenvolvo sites e sistemas 100% profissionais e personnalizados, construo todo seu projeto do absoluto zero e de acordo com sua necessidade.</dd>
+                  <div className={styles.linhaFaq}></div>
+                </div>
+      
+                <div>
+                  <dt onClick={handleRes}>Posso parcelar o pagamento?</dt>
+                  <dd className="ativo">Sim! Você pode parcelar no cartão de crédito.</dd>
+                  <div className={styles.linhaFaq}></div>
+
+                </div>
+
+                <div>
+                  <dt onClick={handleRes}>Você cria E-commerce? (Loja Virtual)</dt>
+                  <dd className="ativo"> Sim! desenvolvo lojas virtuais de qualidade e 100% personalizadas.</dd>
+                  <div className={styles.linhaFaq}></div>
+
+                </div>
+
+                <div>
+                  <dt onClick={handleRes}>Você desenvolve uma Rest API para meu projeto? </dt>
+                  <dd className="ativo"> Sim! desenvolvo sua API em Node.JS.</dd>
+                  <div className={styles.linhaFaq}></div>
+
+                </div>
+
+                <div>
+                  <dt onClick={handleRes}>Você cria landing page?</dt>
+                  <dd className="ativo"> Sim! desenvolvo landing pages voltadas diretamente para altas conversões.</dd>
+                  <div className={styles.linhaFaq}></div>
+
+                </div>
+
+                
+                <div>
+                  <dt onClick={handleRes}>Preciso de um site para minha empresa, você cria sites institucionais?</dt>
+                  <dd className="ativo"> Sim! desenvolvo seu site, com a idente visual de sua empresa.</dd>
+                  <div className={styles.linhaFaq}></div>
+
+                </div>
+
+                <div>
+                  <dt onClick={handleRes}>Na contratação do serviço está incluso domínio e hospedagem?</dt>
+                  <dd className="ativo">Não, é necessário que o cliente já possua domínio e hospedagem. Caso cliente não possua, irei auxiliá-lo.</dd>
+                  <div className={styles.linhaFaq}></div>
+
+                </div>
+
+              </dl>
+            </div>
+            
           </section>
 
 

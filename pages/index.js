@@ -65,6 +65,7 @@ export default function Home() {
 
   /* faq inicio*/
   function handleRes(evt){
+    // console.log(evt.target)
     evt.target.nextElementSibling.classList.toggle("ativo");
   }
   /* faq fim*/
@@ -102,8 +103,17 @@ export default function Home() {
       </Head>
 
 
-      
       <main className={styles.main}>
+        <div className={styles.whatsapp}>
+          <a href='https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F' target="_blank" rel="noreferrer">
+            <Image
+              src="/Vector.svg"
+              alt="Picture of the author"
+              width={20}
+              height={20}
+            />
+          </a>
+        </div>
         <header className={styles.header}>
           <ul>
             <li><a href="#chamadaContato" onClick={handleClick}>Sobre Mim</a></li>
@@ -118,6 +128,7 @@ export default function Home() {
             <div>
               <div className={styles.ellipse1 + ' animaBlur'}></div>
               <div className={styles.ellipse2  + ' animaBlur'}></div>
+             
 
               <h2>Full Stack Developer</h2>
               <h1 className="animaNome">Valdisnei Nilo.</h1>
@@ -259,8 +270,8 @@ export default function Home() {
             </div>
             <div className={styles.nomeArte2Cont}>
                 <div className={styles.nomeArte2}>Full Stack Developer</div>
-                <div className={styles.ellipse4  + ' animaBlur'}></div>
               </div>
+             
             <div className={styles.linha4 + ' animaLeft'}></div>
 
           </section>
@@ -271,57 +282,74 @@ export default function Home() {
             
               <p>Se você não conseguir encontrar uma resposta para sua pergunta em nosso FAQ, você pode nos contatar. Responderemos em breve! </p>
               <dl className={styles.faqPerguntas}>
-                <div>
-                  <dt onClick={handleRes}>Por que me contratar?</dt>
-                  <dd className="ativo " > <span> Por que preciso de dinheiro</span> kkk🤣. Desenvolvo sites e sistemas 100% profissionais e personnalizados, construo todo seu projeto do absoluto zero e de acordo com sua necessidade.</dd>
-                  <div className={styles.linhaFaq}></div>
+
+                <div className={styles.contPerunta} >
+                  <div>
+                    <dt onClick={handleRes} >Por que me contratar?</dt>
+                    <dd className="ativo " id="resposta"> <span className={styles.risco}> Por que preciso de dinheiro</span> kkk🤣. Desenvolvo sites e sistemas 100% profissionais e personnalizados, construo todo seu projeto do absoluto zero e de acordo com sua necessidade.</dd>
+                  </div>
+                  <span className={styles.sinal}>+</span>
                 </div>
+                <div className={styles.linhaFaq}></div>
       
-                <div>
-                  <dt onClick={handleRes}>Posso parcelar o pagamento?</dt>
-                  <dd className="ativo">Sim! Você pode parcelar no cartão de crédito.</dd>
-                  <div className={styles.linhaFaq}></div>
-
+                <div className={styles.contPerunta}>
+                  <div>
+                    <dt onClick={handleRes}>Posso parcelar o pagamento?</dt>
+                    <dd className="ativo">Sim! Você pode parcelar no cartão de crédito.</dd>
+                  </div>
+                  <span className={styles.sinal}>+</span>
                 </div>
+                <div className={styles.linhaFaq}></div>
 
-                <div>
-                  <dt onClick={handleRes}>Você cria E-commerce? (Loja Virtual)</dt>
-                  <dd className="ativo"> Sim! desenvolvo lojas virtuais de qualidade e 100% personalizadas.</dd>
-                  <div className={styles.linhaFaq}></div>
-
+                <div className={styles.contPerunta}>
+                  <div>
+                    <dt onClick={handleRes}>Você cria E-commerce? (Loja Virtual)</dt>
+                    <dd className="ativo"> Sim! desenvolvo lojas virtuais de qualidade e 100% personalizadas.</dd>
+                  </div>
+                  <span className={styles.sinal}>+</span>
                 </div>
+                <div className={styles.linhaFaq}></div>
 
-                <div>
-                  <dt onClick={handleRes}>Você desenvolve uma Rest API para meu projeto? </dt>
-                  <dd className="ativo"> Sim! desenvolvo sua API em Node.JS.</dd>
-                  <div className={styles.linhaFaq}></div>
-
+                <div className={styles.contPerunta}>
+                  <div>
+                    <dt onClick={handleRes}>Preciso de uma API para meu projeto, você desenvolve?</dt>
+                    <dd className="ativo"> Sim! desenvolvo Rest API em Node.js.</dd>
+                  </div>
+                  <span className={styles.sinal}>+</span>
                 </div>
+                <div className={styles.linhaFaq}></div>
 
-                <div>
-                  <dt onClick={handleRes}>Você cria landing page?</dt>
-                  <dd className="ativo"> Sim! desenvolvo landing pages voltadas diretamente para altas conversões.</dd>
-                  <div className={styles.linhaFaq}></div>
 
+
+                <div className={styles.contPerunta}>
+                  <div>
+                    <dt onClick={handleRes}>Você cria landing page?</dt>
+                    <dd className="ativo"> Sim! desenvolvo landing pages voltadas diretamente para altas conversões.</dd>
+                  </div>
+                  <span className={styles.sinal}>+</span>
                 </div>
+                <div className={styles.linhaFaq}></div>
 
-                
-                <div>
-                  <dt onClick={handleRes}>Preciso de um site para minha empresa, você cria sites institucionais?</dt>
-                  <dd className="ativo"> Sim! desenvolvo seu site, com a idente visual de sua empresa.</dd>
-                  <div className={styles.linhaFaq}></div>
-
+                <div className={styles.contPerunta}>
+                  <div>
+                    <dt onClick={handleRes}>Preciso de um site para minha empresa, você cria sites institucionais?</dt>
+                    <dd className="ativo"> Sim! desenvolvo seu site, com a idente visual de sua empresa.</dd>
+                  </div>
+                  <span className={styles.sinal}>+</span>
                 </div>
+                <div className={styles.linhaFaq}></div>
 
-                <div>
-                  <dt onClick={handleRes}>Na contratação do serviço está incluso domínio e hospedagem?</dt>
-                  <dd className="ativo">Não, é necessário que o cliente já possua domínio e hospedagem. Caso cliente não possua, irei auxiliá-lo.</dd>
-                  <div className={styles.linhaFaq}></div>
-
+                <div className={styles.contPerunta}>
+                  <div>
+                    <dt onClick={handleRes}>Na contratação do serviço está incluso domínio e hospedagem?</dt>
+                    <dd className="ativo">Não, é necessário que o cliente já possua domínio e hospedagem. Caso cliente não possua, irei auxiliá-lo.</dd>
+                  </div>
+                  <span className={styles.sinal}>+</span>
                 </div>
-
+                <div className={styles.linhaFaq}></div>
               </dl>
             </div>
+            <div className={styles.ellipse + ' animaBlur'}></div>
             
           </section>
 

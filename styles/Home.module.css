@@ -5,23 +5,13 @@
   color: #fff;
 }
 
-@media (max-width: 750px) {
-	.main {
-		min-height: 100vh;
-		padding: 5rem 1rem;
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		background-color: #000;
-		color: #fff;
-	
-	}
+.whatsapp{
+	position: fixed;
+	top: 10%;
+	right: 10%;
+	z-index: 100;
+
 }
-
-
-
 
 .subtitulo{
 	font-family: Monument800;
@@ -61,20 +51,20 @@
 
 .ellipse1{
   position: absolute;
-	width: 25.9375rem;
-	height: 18.75rem;
+	width: 35.9375rem;
+	height: 38.75rem;
 	left: 10%;
 	top: 0;
 	background: linear-gradient(292.39deg, rgba(13, 251, 208, 0.2) -16.4%, rgba(13, 165, 251, 0.2) 73.45%);
-	filter: blur(9.375rem);
+	filter: blur(7.375rem);
 
 }
 
 .ellipse2{
   position: absolute;
 	width: 25.9375rem;
-	height: 18.75rem;
-	left: 50%;
+	height: 38.75rem;
+	left: 60%;
 	top: 50%;
 	background: linear-gradient(292.39deg, rgba(13, 251, 208, 0.2) -16.4%, rgba(13, 165, 251, 0.2) 73.45%);
 	filter: blur(9.375rem);
@@ -83,45 +73,21 @@
 .ellipse3{
   position: absolute;
 	width: 25.9375rem;
-	height: 18.75rem;
+	height: 28.75rem;
 	left: 40%;
 	top: 20%;
   background: rgba(255, 185, 186, 0.2);
 	filter: blur(6.25rem);
 }
 
-.ellipse4{
+.ellipse{
   position: absolute;
-	width: 25.9375;
-	height: 18.75rem;
-	left: 50%;
-	top: 50%;
+	width: 35.9375rem;
+	height: 28.75rem;
+	left: 38%;
+	top: 0;
 	background: linear-gradient(292.39deg, rgba(13, 251, 208, 0.2) -16.4%, rgba(13, 165, 251, 0.2) 73.45%);
-	filter: blur(9.375rem);
-}
-
-@media (max-width: 750px) {
-	.ellipse1{
-		position: relative;
-		width: 6.25rem;
-		height: 18.75rem;
-		left: 0;
-		top: 0;
-		background-color: chartreuse;
-	}
-	
-}
-
-
-@media (max-width: 750px) {
-	.ellipse1{
-		position: absolute;
-		width: 25.9375;
-		height: 18.75rem;
-		left: 50%;
-		top: 50%;
-		background-color: chartreuse;
-	}
+	filter: blur(8.375rem);
 }
 
 
@@ -174,16 +140,6 @@
   margin: 0;
 
 }
-
-@media (max-width: 750px) {
-  .tituloContainer h1{
-		max-width: 200px;
-		font-size: 4rem;
-		background: chartreuse;
-
-	}
-}
-
 
 .linha1{
   border: 1px solid;
@@ -397,6 +353,7 @@
 	font-size: 16px;
 	line-height: 26px;
 	letter-spacing: 0.2px;
+  margin-right: 50px;
 }
 
 .listaTec{
@@ -405,7 +362,6 @@
 	-webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
-  margin-left: 50px;
 }
 
 .listaTec li{
@@ -423,6 +379,7 @@
 	letter-spacing: 0.2px;
 	opacity: .08;
 	text-align: right;
+	position: relative;
 
 }
 
@@ -441,13 +398,11 @@
 
 .faq {
   position: relative;
-
 }
 
 .faq > div{
   display: flex;
 	flex-wrap: wrap;
-
 }
 
 .faq p {
@@ -459,22 +414,17 @@
 	line-height: 26px;
 	letter-spacing: 0.2px;
   margin-right: 3.125rem;
-
-
 }
 
-
-
-
-
-.faqPerguntas {
-
-
+.contPerunta{
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	position: relative;
 }
 
-
-.faqPerguntas > div{
-
+.contPerunta div{
+	max-width: 400px;
 }
 
 .faqPerguntas dt{
@@ -485,6 +435,8 @@
 	line-height: 24px;
 	letter-spacing: 0.2px;
 	color: #FFFFFF;
+	cursor: pointer;
+
 }
 
 .faqPerguntas dt::before{
@@ -516,10 +468,13 @@
 	margin-bottom: 15px;
 }
 
-.faqPerguntas span{
-	text-decoration: line-through;
+.sinal{
+	font-size: 1.2rem;
 }
 
+.risco{
+	text-decoration: line-through;
+}
 
 
 .formCont{
@@ -681,14 +636,6 @@
 
 /* anti span */
 
-
-@media (max-width: 1000px) {
-  
-}
-
-
-
-
 /* **************************************************************************************************************************************************************************************************************** */
 
 /* RESPONSIVO TABLET */
@@ -710,21 +657,20 @@
 	}
 
 	.ellipse2{
-		left: 5%;
+		left: 60%;
 		top: 10%;
+		height: 10rem;
 	}
 	
 	.ellipse3{
-
 		left: 30%;
 		top: 10%;
-
 	}
 	
-	.ellipse4{
-
-		left: 30%;
-		top: 25%;
+	.ellipse{
+		height: 10rem;
+		left: 8%;
+		top: 0%;
 	}
 
 	.tituloContainer div{
@@ -825,103 +771,37 @@
 	.tecnologiasDiv{
 		display: flex;
 		flex-wrap: wrap;
-		background-color: lightcoral;
 	
 	}
 	
 	.tecnologias p{
-		width: 445px;
-		font-family: Inter;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 26px;
-		letter-spacing: 0.2px;
-		background-color: lightblue;
+		width: 18.75rem;
+		font-size: .875rem;
+		line-height: 1.4rem;
+
 	}
 	
-	.listaTec{
-		text-align: left;
-		max-width: 300px;
-		-webkit-column-count: 2;
-		-moz-column-count: 2;
-		column-count: 2;
-		margin-left: 50px;
-		background-color: khaki;
-	}
-	
+
 	.listaTec li{
-		padding: 10px;
-		font-size: 1.5rem;
+		padding: .5rem;
+		font-size: 1.3rem;
 	}
 	
-	
-	
-	.nomeArte2{
-		font-family: Monument800;
-		font-style: normal;
-		font-weight: 800;
-		font-size: 5rem;
-		letter-spacing: 0.2px;
-		opacity: .08;
-		text-align: right;
-		background-color: lawngreen;
-	
-	}
-	
-	.linha4{
-		border: 1px solid;
-		margin-top: 10px;
-		width: 300px;
-		margin-left: 50%;
-		margin-bottom: 90px;
-		background: linear-gradient(#222, #222), 
-		linear-gradient(to right, rgba(103, 255, 219, 0.41) -20.44%, rgba(0, 0, 0, 0) 134.61%);
-		background-origin: padding-box, border-box;
-		background-repeat: no-repeat;
-		border: 1px solid transparent;
-	}
-	
-	.faq {
-		position: relative;
-	
-	}
-	
-	.faq > div{
-		display: flex;
-		flex-wrap: wrap;
-		background-color: lightcoral;
-	
-	}
 	
 	.faq p {
-		width: 445px;
-		font-family: Inter;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 26px;
-		letter-spacing: 0.2px;
-		background-color: lightblue;
+		width: 18.75rem;
+		font-size: .875rem;
+		line-height: 1.4rem;
 		margin-right: 3.125rem;
-	
-	
 	}
-	
-	
-	
-	
 	
 	.faqPerguntas {
-		background-color: khaki;
 	
 	
 	}
-	
-	@media (max-width: 1000px) {
-		.faqPerguntas {
-			width: 445px;
-		}
+
+	.faqPerguntas {
+		width: 445px;
 	}
 	
 	.faqPerguntas > div{
@@ -929,161 +809,68 @@
 	}
 	
 	.faqPerguntas dt{
-		font-family: Inter;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: 0.2px;
-		color: #FFFFFF;
+		font-size: .875rem;
+		line-height: 1.4rem;
 	}
 	
-	.faqPerguntas dt::before{
-		content: "";
-		display: inline-flex;
-		margin-right: 1rem;
-		border-radius: 100%;
-		width: 5px;
-		height: 5px;
-		background: #FFFFFF;
-	}
+
 	
 	.faqPerguntas dd {
-		width: 417px;
-		font-family: DM Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 26px;
-		letter-spacing: 0.2px;
-		color: rgba(255, 255, 255, 0.8);
+		font-size: .875rem;
+		line-height: 1.4rem;
 	}
 	
 	.linhaFaq {
-		width: 713px;
-		height: 0px;
-		border: 1px solid #2E2E2E;
-		margin-top: 17px;
-		margin-bottom: 15px;
+		margin-top: .8rem;
+		margin-bottom: .7rem;
 	}
 	
-	.faqPerguntas span{
-		text-decoration: line-through;
+
+	.linhaFaq {
+		width: 445px;
+
 	}
-	
-	
-	
-	
-	@media (max-width: 1000px) {
-	
-		.linhaFaq {
-			width: 445px;
-	
-		}
-	}
-	
-	
-	
-	
-	
 	
 	.formCont{
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-		padding: 2rem 0;
-		max-width: 1400px;
-		margin: 0 auto;
-	
+		padding: 0;
 	}
 	
 	
 	.textForm h2 {
-		width: 620px;
-		font-family: Monument400;
-		font-weight: 400;
-		font-size: 72px;
-		line-height: 115px;
-		letter-spacing: -5px;
-		background: linear-gradient(270.57deg, #E7B2AB -47.05%, #7B83CA 142.32%);
-		background-clip: border-box;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		font-size: 3.5rem;
+		line-height: 4rem;
+		opacity: .8;
 	}
 	
 	.textForm p{
-		width: 419px;
-		font-family: DM Sans;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 26px;
-		letter-spacing: 0.2px;
-		color: rgba(26, 26, 37, 0.8);
-		text-align: left;
+		width: 18.75rem;
+		font-size: .875rem;
+		line-height: 1.4rem;
 	}
 	
-	.containerformulario{
-		display: flex;
-		justify-content: center;
-	}
+
 	.formulario{
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin-top: 50px;
+		margin-top: 2rem;
 	}
 	
 	.formulario input, .formulario select{
-		font-family:'DM Sans', sans-serif;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 21px;
-		letter-spacing: 0.2px;
-		color: #37424D;
+		font-size: .875rem;
+		line-height: 1.4rem;
 		padding: 1rem;
-		border: none;
-		background: none;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.7);
-		width: 393px;
-	
 	}
-	
-	.formulario input:hover, .formulario select:hover, .formulario input:focus, .formulario select:focus{
-		outline: none;
-		
-	}
-	
-	.formulario input:focus, .formulario select:focus{
-		border-color: #E7B2AB;
-	}
-	
-	
 	
 	.formulario button {
-		font-weight: 600;
-		font-size: 14px;
-		line-height: 17px;
-		color:#fff;
-		width: 214px;
-		height: 60px;
-		border-radius: 8px;
-		margin-top: 27px;
-		border: none;
-		cursor: pointer;
-		background: #000;
-		margin-bottom: 1rem;
+		font-size: .875rem;
+		line-height: 1rem;
+		width: 10.75rem;
+		height: 2.5rem;
+		margin-top: 1.6875rem;
+		margin-bottom: 5rem;
 	}
-	
-	.contatos>p{
-		font-family: DM Sans;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 21px;
-		letter-spacing: 0.2px;
-	}
+
 	
 	.contatos div{
 		margin-top: .5rem;
@@ -1094,71 +881,22 @@
 	}
 	
 	.contatos>div p{
-		font-family: DM Sans;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 21px;
-		letter-spacing: 0.2px;
+		font-size: .875rem;
+		line-height: 1.4rem;
 	}
-	
-	.footer{
-		display: flex;
-		max-width: 1400px;
-		margin: 0 auto;
-		justify-content: space-between;
-	
-	}
+
 	
 	.footer p{
-		font-family: DM Sans;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 12px;
-		line-height: 21px;
-		letter-spacing: 0.2px;
-		padding: 65px;
-		text-align: right;
+		font-size: .7rem;
+		line-height: 1.2rem;
+		padding: 2rem;
 	}
-	
-	.footer h2{
-		font-family: Monument800;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 12px;
-		line-height: 21px;
-		letter-spacing: 0.2px;
-		padding: 65px;
-	}
-	
-	.footer span{
-		font-family: Monument800;
-	
-	}
-	
-	
-	/* anti span */
-	.nao{
-		visibility: hidden;
-		position: absolute;
-		height: 0px;
-	}
-	
-	/* anti span */
-	
-	
-	@media (max-width: 1000px) {
-		
-	}
-	
-	
-	
-	
+
 	/* **************************************************************************************************************************************************************************************************************** */
 	
 	/* RESPONSIVO TABLET */
 	
-	@media (max-width: 1000px) {
+	@media (max-width: 750px) {
 		
 	}
 	

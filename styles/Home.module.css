@@ -400,6 +400,10 @@
   position: relative;
 }
 
+.faq a{
+	color: #FF82A7;
+}
+
 .faq > div{
   display: flex;
 	flex-wrap: wrap;

@@ -273,6 +273,7 @@ export default function Home() {
               </div>
              
             <div className={styles.linha4 + ' animaLeft'}></div>
+            <div className={styles.ellipse + ' animaBlur'}></div>
 
           </section>
 
@@ -280,7 +281,7 @@ export default function Home() {
             <h2 className={styles.subtitulo}>Perguntas Frequentes</h2>
             <div>
             
-              <p>Se você não conseguir encontrar uma resposta para sua pergunta em nosso FAQ, você pode nos contatar. Responderemos em breve! </p>
+              <p>Se você não conseguir encontrar uma resposta para sua pergunta em nosso FAQ, você pode <a href="https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F" target="_blank" rel="noreferrer" >entrar em contato.</a> Responderei em breve! </p>
               <dl className={styles.faqPerguntas}>
 
                 <div className={styles.contPerunta} >
@@ -349,7 +350,6 @@ export default function Home() {
                 <div className={styles.linhaFaq}></div>
               </dl>
             </div>
-            <div className={styles.ellipse + ' animaBlur'}></div>
             
           </section>
 
@@ -429,7 +429,7 @@ export default function Home() {
             <div className={styles.contatos}>
               <p>Tem alguma pergunta?</p>
               <div>
-                <p><a href="mailto:valdisneinilo@gmail.com">contato@valdev.com</a></p>
+                <p><a href="mailto:valdisneidev@gmail.com">contato@valdev.com</a></p>
                 <p><a href="tel:063991030921">+55 (63) 99103-0921</a></p>
               </div>
             </div>

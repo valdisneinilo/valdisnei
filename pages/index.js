@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react';
 import styles from '../styles/Home.module.css';
+// import initMenuMobile from '../js/menu-mobile'
+
 // import Link from 'next/link';
 
 export default function Home() {
@@ -84,6 +86,14 @@ export default function Home() {
   /*scroll fim*/
 
 
+  function initMenuMobile() {
+    const menuButton = document.querySelector('[data-menu="button"]');
+    menuButton.classList.toggle('active');
+    const menuList = document.querySelector('[data-menu="list"]');
+    menuList.classList.toggle('menuDisplay');
+  }
+
+
   
   return (
     <div>
@@ -114,8 +124,10 @@ export default function Home() {
             />
           </a>
         </div>
+        
         <header className={styles.header}>
-          <ul>
+          <button data-menu="button" className={styles.menuButton} onClick={initMenuMobile}><i className="fas fa-bars"></i></button>
+          <ul data-menu='list' className={styles.menuList}>
             <li><a href="#chamadaContato" onClick={handleClick}>Sobre Mim</a></li>
             <li><a href="#projetos" onClick={handleClick}>Projetos</a></li>
             <li><a href="#tecnologias" onClick={handleClick}>Tecnologias</a></li>
@@ -123,6 +135,7 @@ export default function Home() {
             <li><a href="#contato" onClick={handleClick}>Contato</a></li>
           </ul>
         </header>
+
         <section className={styles.home}>
           <div className={styles.tituloContainer}>
             <div>

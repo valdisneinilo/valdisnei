@@ -98,3 +98,19 @@ font-family: Monument400;
 
 
 
+.active{
+  transition: 1s;
+  transform: rotate(90deg);
+}
+
+.menuDisplay{
+  display: block !important;
+  animation: menuDisplay 1s forwards !important;
+}
+
+@keyframes menuDisplay {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}

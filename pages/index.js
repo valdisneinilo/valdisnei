@@ -67,7 +67,11 @@ export default function Home() {
 
   /* faq inicio*/
   function handleRes(evt){
-    // console.log(evt.target)
+    const remove = document.querySelectorAll(".ativo");
+    let agora = evt.target.innerHTML
+    remove.forEach(item=>{
+      item.classList.remove("ativo")
+    })
     evt.target.nextElementSibling.classList.toggle("ativo");
   }
   /* faq fim*/
@@ -117,14 +121,14 @@ export default function Home() {
         <div className={styles.whatsapp}>
           <a href='https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F' target="_blank" rel="noreferrer">
             <Image
-              src="/Vector.svg"
+              src="/Frame.svg"
               alt="Picture of the author"
-              width={20}
-              height={20}
+              width={30}
+              height={30}
             />
           </a>
         </div>
-        
+
         <header className={styles.header}>
           <button data-menu="button" className={styles.menuButton} onClick={initMenuMobile}><i className="fas fa-bars"></i></button>
           <ul data-menu='list' className={styles.menuList}>
@@ -141,8 +145,6 @@ export default function Home() {
             <div>
               <div className={styles.ellipse1 + ' animaBlur'}></div>
               <div className={styles.ellipse2  + ' animaBlur'}></div>
-             
-
               <h2>Full Stack Developer</h2>
               <h1 className="animaNome">Valdisnei Nilo.</h1>
               <div className={styles.linha1 + ' animaLeft'}></div>
@@ -157,7 +159,7 @@ export default function Home() {
 
           <div className={styles.quemSou} id="chamadaContato">
             <div className={styles.quemSouTexto}>
-              <h2 className={styles.subtitulo}>Quem sou eu</h2>
+              <h2 className={styles.subtitulo}>Quem sou</h2>
               <p>
                 Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e sistemas web transformo ideias em resultados através de <span id="mono"> &#10094; linhas de código. &#10095;</span>, sou apaixonado por código e café ☕.
                 Quer saber mais sobre mim? Me acompanhe nas redes. 👇🏻 
@@ -300,7 +302,7 @@ export default function Home() {
                 <div className={styles.contPerunta} >
                   <div>
                     <dt onClick={handleRes} >Por que me contratar?</dt>
-                    <dd className="ativo " id="resposta"> <span className={styles.risco}> Por que preciso de dinheiro</span> kkk🤣. Desenvolvo sites e sistemas 100% profissionais e personnalizados, construo todo seu projeto do absoluto zero e de acordo com sua necessidade.</dd>
+                    <dd  data-menu='resposta' className="ativo"> <span className={styles.risco}> Por que preciso de dinheiro</span> kkk🤣. Desenvolvo sites e sistemas 100% profissionais e personnalizados, construo todo seu projeto do absoluto zero e de acordo com sua necessidade.</dd>
                   </div>
                   <span className={styles.sinal}>+</span>
                 </div>
@@ -308,8 +310,8 @@ export default function Home() {
       
                 <div className={styles.contPerunta}>
                   <div>
-                    <dt onClick={handleRes}>Posso parcelar o pagamento?</dt>
-                    <dd className="ativo">Sim! Você pode parcelar no cartão de crédito.</dd>
+                    <dt onClick={handleRes} >Posso parcelar o pagamento?</dt>
+                    <dd  data-menu='resposta'>Sim! Você pode parcelar no cartão de crédito.</dd>
                   </div>
                   <span className={styles.sinal}>+</span>
                 </div>
@@ -317,8 +319,8 @@ export default function Home() {
 
                 <div className={styles.contPerunta}>
                   <div>
-                    <dt onClick={handleRes}>Você cria E-commerce? (Loja Virtual)</dt>
-                    <dd className="ativo"> Sim! desenvolvo lojas virtuais de qualidade e 100% personalizadas.</dd>
+                    <dt onClick={handleRes} >Você cria E-commerce? (Loja Virtual)</dt>
+                    <dd data-menu='resposta'> Sim! desenvolvo lojas virtuais de qualidade e 100% personalizadas.</dd>
                   </div>
                   <span className={styles.sinal}>+</span>
                 </div>
@@ -326,8 +328,8 @@ export default function Home() {
 
                 <div className={styles.contPerunta}>
                   <div>
-                    <dt onClick={handleRes}>Preciso de uma API para meu projeto, você desenvolve?</dt>
-                    <dd className="ativo"> Sim! desenvolvo Rest API em Node.js.</dd>
+                    <dt onClick={handleRes} >Preciso de uma API para meu projeto, você desenvolve?</dt>
+                    <dd  data-menu='resposta'> Sim! desenvolvo Rest API em Node.js.</dd>
                   </div>
                   <span className={styles.sinal}>+</span>
                 </div>
@@ -337,8 +339,8 @@ export default function Home() {
 
                 <div className={styles.contPerunta}>
                   <div>
-                    <dt onClick={handleRes}>Você cria landing page?</dt>
-                    <dd className="ativo"> Sim! desenvolvo landing pages voltadas diretamente para altas conversões.</dd>
+                    <dt onClick={handleRes} >Você cria landing page?</dt>
+                    <dd  data-menu='resposta'> Sim! desenvolvo landing pages voltadas diretamente para altas conversões.</dd>
                   </div>
                   <span className={styles.sinal}>+</span>
                 </div>
@@ -346,8 +348,8 @@ export default function Home() {
 
                 <div className={styles.contPerunta}>
                   <div>
-                    <dt onClick={handleRes}>Preciso de um site para minha empresa, você cria sites institucionais?</dt>
-                    <dd className="ativo"> Sim! desenvolvo seu site, com a idente visual de sua empresa.</dd>
+                    <dt onClick={handleRes} >Preciso de um site para minha empresa, você cria sites institucionais?</dt>
+                    <dd  data-menu='resposta'> Sim! desenvolvo seu site, com a idente visual de sua empresa.</dd>
                   </div>
                   <span className={styles.sinal}>+</span>
                 </div>
@@ -355,8 +357,8 @@ export default function Home() {
 
                 <div className={styles.contPerunta}>
                   <div>
-                    <dt onClick={handleRes}>Na contratação do serviço está incluso domínio e hospedagem?</dt>
-                    <dd className="ativo">Não, é necessário que o cliente já possua domínio e hospedagem. Caso cliente não possua, irei auxiliá-lo.</dd>
+                    <dt onClick={handleRes} >Na contratação do serviço está incluso domínio e hospedagem?</dt>
+                    <dd data-menu='resposta'>Não, é necessário que o cliente já possua domínio e hospedagem. Caso cliente não possua, irei auxiliá-lo.</dd>
                   </div>
                   <span className={styles.sinal}>+</span>
                 </div>
@@ -374,7 +376,7 @@ export default function Home() {
 
         <div className={styles.textForm}>
           <h2 className={styles.subtitulo}>Vamos iniciar um projeto?</h2>
-          <p>Vamos dar vida  ás suas ideias, para isso é só peencher o formulário para conversarmos sobre o que podemos construir e elevar juntos.</p>
+          <p>Vamos dar vida  ás suas ideias, para basta só peencher o formulário para conversarmos sobre o que podemos construir e elevar juntos.</p>
         </div>
         <div className={styles.containerformulario}>
           <div className={styles.duvida}>
@@ -456,7 +458,7 @@ export default function Home() {
       </section>
 
       <footer className={styles.footer}>
-        <p>Developed by <span>Valdisnei Nilo</span></p>
+        <p className={styles.developer}>Developed by <span>Valdisnei Nilo</span></p>
         <p> Copyright © 2021 Todos os direitos reservados Valdisnei Nilo</p>
         <p>Design by <span>DECO</span> </p>
       </footer>

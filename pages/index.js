@@ -161,7 +161,7 @@ export default function Home() {
             <div className={styles.quemSouTexto}>
               <h2 className={styles.subtitulo}>Quem sou</h2>
               <p>
-                Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e sistemas web transformo ideias em resultados através de <span id="mono"> &#10094; linhas de código. &#10095;</span>, sou apaixonado por código e café ☕.
+                Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e sistemas web. Transformo ideias em resultados através de <span id="mono"> &#10094; linhas de código. &#10095;</span>, sou apaixonado por código e café ☕.
                 Quer saber mais sobre mim? Me acompanhe nas redes. 👇🏻 
               </p>
 
@@ -349,7 +349,7 @@ export default function Home() {
                 <div className={styles.contPerunta}>
                   <div>
                     <dt onClick={handleRes} >Preciso de um site para minha empresa, você cria sites institucionais?</dt>
-                    <dd  data-menu='resposta'> Sim! desenvolvo seu site, com a idente visual de sua empresa.</dd>
+                    <dd  data-menu='resposta'> Sim! desenvolvo seu site, com a identidade visual de sua empresa.</dd>
                   </div>
                   <span className={styles.sinal}>+</span>
                 </div>
@@ -376,7 +376,7 @@ export default function Home() {
 
         <div className={styles.textForm}>
           <h2 className={styles.subtitulo}>Vamos iniciar um projeto?</h2>
-          <p>Vamos dar vida  ás suas ideias, para basta só peencher o formulário para conversarmos sobre o que podemos construir e elevar juntos.</p>
+          <p>Vamos dar vida  ás suas ideias, basta peencher o formulário para conversarmos sobre o que podemos construir e elevar juntos.</p>
         </div>
         <div className={styles.containerformulario}>
           <div className={styles.duvida}>

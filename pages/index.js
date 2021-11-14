@@ -161,7 +161,7 @@ export default function Home() {
             <div className={styles.quemSouTexto}>
               <h2 className={styles.subtitulo}>Quem sou</h2>
               <p>
-                Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e sistemas web. Transformo ideias em resultados através de <span id="mono"> &#10094; linhas de código. &#10095;</span>, sou apaixonado por código e café ☕.
+                Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e sistemas web. Transformo ideias em resultados através de <span id="mono"> &#10094; linhas de código, &#10095;</span> sou apaixonado por código e café ☕.
                 Quer saber mais sobre mim? Me acompanhe nas redes. 👇🏻 
               </p>
 
@@ -270,12 +270,12 @@ export default function Home() {
 
             <div className={styles.tecnologiasDiv}>
 
-              <p>A escolha da Stack ou do conjunto de tecnologias fazem toda a diferença na hora de “botar a mão na massa”.Construir soluções variadas e personalizadas de acordo com a sua necessidade utilizando o que há de mais sólido e moderno disponível no mercado é a minha especialidade.</p>
+              <p>A escolha do conjunto de tecnologias faz toda a diferença na hora de “botar a mão na massa”. Construir soluções personalizadas de acordo com a sua necessidade, utilizando o que há de mais sólido e moderno no mercado é a minha especialidade.</p>
 
               <ul className={styles.listaTec}>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>.JS</li>
+                <li>JavaScript</li>
                 <li>React</li>
                 <li>Node</li>
                 <li>MySQL</li>
@@ -376,7 +376,7 @@ export default function Home() {
 
         <div className={styles.textForm}>
           <h2 className={styles.subtitulo}>Vamos iniciar um projeto?</h2>
-          <p>Vamos dar vida  ás suas ideias, basta peencher o formulário para conversarmos sobre o que podemos construir e elevar juntos.</p>
+          <p>Vamos dar vida  às suas ideias, basta preencher o formulário para conversarmos sobre o que podemos construir e elevar juntos.</p>
         </div>
         <div className={styles.containerformulario}>
           <div className={styles.duvida}>

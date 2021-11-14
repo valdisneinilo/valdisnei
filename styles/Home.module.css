@@ -976,25 +976,19 @@
 
 
 	.ellipse1{
-		display: none;
 		position: absolute;
-		width: 35.9375rem;
-		height: 38.75rem;
-		left: 10%;
+		width: 25.9375rem;
+		height: 18.75rem;
+		left: 0;
 		top: 0;
-		background: linear-gradient(292.39deg, rgba(13, 251, 208, 0.2) -16.4%, rgba(13, 165, 251, 0.2) 73.45%);
-		filter: blur(7.375rem);
-	
 	}
 	
 	.ellipse2{
-		display: none;
-		
 		position: absolute;
-		width: 25.9375rem;
-		height: 38.75rem;
-		left: 60%;
-		top: 50%;
+		width: 15.9375rem;
+		height: 18.75rem;
+		left: 0;
+		top: 30%;
 		background: linear-gradient(292.39deg, rgba(13, 251, 208, 0.2) -16.4%, rgba(13, 165, 251, 0.2) 73.45%);
 		filter: blur(9.375rem);
 	}
@@ -1012,12 +1006,11 @@
 	}
 	
 	.ellipse{
-		display: none;
 
 		position: absolute;
-		width: 35.9375rem;
+		width: 10.9375rem;
 		height: 28.75rem;
-		left: 38%;
+		left: 5%;
 		top: 0;
 		background: linear-gradient(292.39deg, rgba(13, 251, 208, 0.2) -16.4%, rgba(13, 165, 251, 0.2) 73.45%);
 		filter: blur(8.375rem);
@@ -1080,6 +1073,7 @@
 		line-height: 1.5rem;
 		align-self: center;
 		color: rgba(255, 255, 255, 0.8);
+		z-index: 50;
 
 	}
 	
@@ -1090,6 +1084,7 @@
 		height: 3.75rem;
 		margin-top: 1rem;
 		margin-bottom: 4.9375rem;
+		z-index: 50;
 	}
 	
 	.quemSou{
@@ -1135,11 +1130,11 @@
 		margin-left: 30%;
 		margin-bottom: 3rem;
 	}
-	/* 
 
 	.projetos{
 		display: none;
 	}
+	/* 
 	
 	.containerProj{
 		display: flex;
@@ -1227,6 +1222,8 @@
 		font-size: .875rem;
 		line-height: 1.5rem;
 		color: rgba(255, 255, 255, 0.8);
+		z-index: 50;
+
 	}
 	
 	.listaTec{
@@ -1236,6 +1233,8 @@
 		-moz-column-count: 2;
 		column-count: 2;
 		padding: 0;
+		z-index: 50;
+
 	}
 	
 	.listaTec li{
@@ -1248,6 +1247,8 @@
 		font-size: 2.8rem;
 		opacity: .08;
 		text-align: left;
+		z-index: 50;
+
 	
 	}
 	
@@ -1344,6 +1345,7 @@
 	
 	.formulario{
 		margin-top: 2rem;
+		margin: 0 auto;
 	}
 	
 	.formulario input, .formulario select{

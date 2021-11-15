@@ -105,6 +105,9 @@ export default function Home() {
   return (
     <div>
       <Head>
+        <meta 
+          name="google-site-verification" content="modJdQ2HzlEyRr8r_h2bMUmKKXPHVL6JoK-iVOmFoR0"
+         />
         <meta
           name="description"
           content="Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e sistemas web transformo ideias em resultados através de linhas de código."

@@ -105,6 +105,8 @@ export default function Home() {
   return (
     <div>
       <Head>
+   
+        
         <meta
           name="google-site-verification"
           content="modJdQ2HzlEyRr8r_h2bMUmKKXPHVL6JoK-iVOmFoR0"
@@ -117,6 +119,7 @@ export default function Home() {
         <meta
           property="og:title"
           content="Valdisnei Nilo || Desenvolvedor Full Stack"
+          key="title"
         />
         <meta
           property="og:description"
@@ -132,7 +135,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.main} style={{background: "#121212"}}>
         <div className={styles.whatsapp}>
           <a
             href="https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F"
@@ -177,7 +180,7 @@ export default function Home() {
           </ul>
         </header>
 
-        <section className={styles.home}>
+        <section className={styles.home }>
           <div className={styles.tituloContainer}>
             <div>
               <div className={styles.ellipse1 + " animaBlur"}></div>
@@ -473,14 +476,14 @@ export default function Home() {
               action=""
               method="POST"
               className={styles.formulario}
-              autoComplete="none"
+              autoComplete="off"
             >
               <input
                 type="text"
                 id="nome"
                 placeholder="Nome"
                 name="name"
-                autoComplete="none"
+                autoComplete="off"
                 required
                 value={nome}
                 onChange={(e) => {
@@ -493,7 +496,7 @@ export default function Home() {
                 id="telefone"
                 placeholder="Telefone"
                 name="telefone"
-                autoComplete="none"
+                autoComplete="off"
                 required
                 onChange={(e) => {
                   setTelefone(e.target.value);
@@ -510,14 +513,13 @@ export default function Home() {
                   setEmail(e.target.value);
                 }}
                 required
-                autoComplete="none"
+                autoComplete="off"
                 value={email}
               />
 
               <select
                 name="projeto"
                 id="projeto"
-                type="select"
                 value={projeto}
                 onChange={(e) => {
                   setProjeto(e.target.value);

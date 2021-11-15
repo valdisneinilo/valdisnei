@@ -764,6 +764,11 @@
 	border: 1px solid transparent;
 }
 
+.projetos{
+	display: none;
+
+}
+
 .containerProj{
   display: flex;
   justify-content: space-evenly;

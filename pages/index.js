@@ -127,12 +127,12 @@ export default function Home() {
           content="https://valdev.com.br/public/og-image.png"
         />
 
-        <link
+        {/* <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
           crossOrigin="anonymous"
-        />
+        /> */}
 
         <title>Valdisnei Nilo || Desenvolvedor Full Stack</title>
         <link rel="icon" href="/favicon.ico" />
@@ -155,13 +155,9 @@ export default function Home() {
         </div>
 
         <header className={styles.header}>
-          <button
-            data-menu="button"
-            className={styles.menuButton}
-            onClick={initMenuMobile}
-          >
-            <i className="fas fa-bars"></i>
-          </button>
+          <div  onClick={initMenuMobile}>
+            <button data-menu="button" className={styles.menuButton}></button>
+          </div>
           <ul data-menu="list" className={styles.menuList}>
             <li>
               <a href="#chamadaContato" onClick={handleClick}>
@@ -209,6 +205,14 @@ export default function Home() {
                 rel="noreferrer"
               >
                 Fale comigo 👋🏻
+                <span>
+                  <Image
+                    src="/Arrow.svg"
+                    alt="Picture of the author"
+                    width={30}
+                    height={10}
+                  />
+                </span>
               </a>
             </button>
           </div>
@@ -586,6 +590,14 @@ export default function Home() {
                 }}
               >
                 Iniciar Projeto
+                <span>
+                  <Image
+                    src="/Arrow.svg"
+                    alt="Picture of the author"
+                    width={30}
+                    height={10}
+                  />
+                </span>
               </button>
             </form>
 

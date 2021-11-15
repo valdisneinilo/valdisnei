@@ -204,6 +204,10 @@
 
 }
 
+.chamadaContato span{
+	padding-left: .2rem;
+}
+
 .quemSou {
 	display: flex;
 	justify-content: space-between;
@@ -524,6 +528,10 @@
 	cursor: pointer;
 	background: #000;
 	margin-bottom: 1rem;
+}
+
+.duvida span{
+	padding-left: .2rem;
 }
 
 .contatos>p {
@@ -879,15 +887,21 @@
 		cursor: pointer;
 		z-index: 300;
 		transition: 1s;
-		background: none;
-		font-size: 1.5rem;
-		font-weight: normal;
-		background: linear-gradient(92.33deg, #DFFFD7 30.39%, #FF82A7 60.67%);
-		background-clip: border-box;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
+		width: 30px;
+		height: 1px;
+		box-shadow: 0px -8px #fff, 0px 8px #fff;
 
 	}
+	.header div{
+		padding: 20px;
+		position: fixed;
+		left: .6375rem;
+		top: 3rem;
+		border: none;
+		cursor: pointer;
+		z-index: 300;
+	}
+
 
 	.header ul {
 		transition: 1s;
@@ -898,7 +912,7 @@
 		z-index: 250;
 		padding: 3.125rem 0 .625rem 0;
 		position: fixed;
-		top: 3.125rem;
+		top: 2.125rem;
 		left: .3125rem;
 		border-radius: .5rem;
 	}

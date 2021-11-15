@@ -105,9 +105,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta 
-          name="google-site-verification" content="modJdQ2HzlEyRr8r_h2bMUmKKXPHVL6JoK-iVOmFoR0"
-         />
+        <meta
+          name="google-site-verification"
+          content="modJdQ2HzlEyRr8r_h2bMUmKKXPHVL6JoK-iVOmFoR0"
+        />
         <meta
           name="description"
           content="Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e sistemas web transformo ideias em resultados através de linhas de código."
@@ -126,13 +127,6 @@ export default function Home() {
           property="og:image"
           content="https://valdev.com.br/public/og-image.png"
         />
-
-        {/* <link
-          rel="stylesheet"
-          href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-          crossOrigin="anonymous"
-        /> */}
 
         <title>Valdisnei Nilo || Desenvolvedor Full Stack</title>
         <link rel="icon" href="/favicon.ico" />
@@ -155,7 +149,7 @@ export default function Home() {
         </div>
 
         <header className={styles.header}>
-          <div  onClick={initMenuMobile}>
+          <div onClick={initMenuMobile}>
             <button data-menu="button" className={styles.menuButton}></button>
           </div>
           <ul data-menu="list" className={styles.menuList}>
@@ -170,8 +164,10 @@ export default function Home() {
                 Tecnologias
               </a>
             </li>
-            <li href="#faq" onClick={handleClick}>
-              FAQ
+            <li>
+              <a href="#faq" onClick={handleClick}>
+                FAQ
+              </a>
             </li>
             <li>
               <a href="#contato" onClick={handleClick}>
@@ -198,12 +194,12 @@ export default function Home() {
               👋 Olá, sou responsável por dar vida ao seu projeto. Quer saber
               como? Clique no botão abaixo. 🙋
             </p>
-            <button>
-              <a
-                href="https://api.whatsapp.com/send?phone=5563991030921&text=Bom%20dia%20gostaria%20de%20falar%20sobre%20o%20desenvolvimento%20de%20um%20projeto"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <a
+              href="https://api.whatsapp.com/send?phone=5563991030921&text=Bom%20dia%20gostaria%20de%20falar%20sobre%20o%20desenvolvimento%20de%20um%20projeto"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button>
                 Fale comigo 👋🏻
                 <span>
                   <Image
@@ -213,8 +209,8 @@ export default function Home() {
                     height={10}
                   />
                 </span>
-              </a>
-            </button>
+              </button>
+            </a>
           </div>
 
           <div className={styles.quemSou} id="chamadaContato">
@@ -229,7 +225,6 @@ export default function Home() {
               </p>
 
               <div className={styles.redes}>
-               
                 <div>
                   <a
                     href="https://www.linkedin.com/in/valdisnei-nilo-656b67202/"
@@ -382,104 +377,80 @@ export default function Home() {
               </p>
               <dl className={styles.faqPerguntas}>
                 <div className={styles.contPerunta}>
-                  <div>
-                    <dt onClick={handleRes}>Por que me contratar?</dt>
-                    <dd data-menu="resposta" className="ativo">
-                      {" "}
-                      <span className={styles.risco}>
-                        {" "}
-                        Por que preciso de dinheiro
-                      </span>{" "}
-                      kkk🤣. Desenvolvo sites e sistemas 100% profissionais e
-                      personnalizados, construo todo seu projeto do absoluto
-                      zero e de acordo com sua necessidade.
-                    </dd>
-                  </div>
-                  <span className={styles.sinal}>+</span>
+                  <dt onClick={handleRes}>Por que me contratar?</dt>
+                  <dd data-menu="resposta" className="ativo">
+                    <span className={styles.risco}>
+                      Por que preciso de dinheiro
+                    </span>
+                    kkk🤣. Desenvolvo sites e sistemas 100% profissionais e
+                    personnalizados, construo todo seu projeto do absoluto zero
+                    e de acordo com sua necessidade.
+                  </dd>
                 </div>
                 <div className={styles.linhaFaq}></div>
 
                 <div className={styles.contPerunta}>
-                  <div>
-                    <dt onClick={handleRes}>Posso parcelar o pagamento?</dt>
-                    <dd data-menu="resposta">
-                      Sim! Você pode parcelar no cartão de crédito.
-                    </dd>
-                  </div>
-                  <span className={styles.sinal}>+</span>
+                  <dt onClick={handleRes}>Posso parcelar o pagamento?</dt>
+                  <dd data-menu="resposta">
+                    Sim! Você pode parcelar no cartão de crédito.
+                  </dd>
                 </div>
                 <div className={styles.linhaFaq}></div>
 
                 <div className={styles.contPerunta}>
-                  <div>
-                    <dt onClick={handleRes}>
-                      Você cria E-commerce? (Loja Virtual)
-                    </dt>
-                    <dd data-menu="resposta">
-                      {" "}
-                      Sim! desenvolvo lojas virtuais de qualidade e 100%
-                      personalizadas.
-                    </dd>
-                  </div>
-                  <span className={styles.sinal}>+</span>
+                  <dt onClick={handleRes}>
+                    Você cria E-commerce? (Loja Virtual)
+                  </dt>
+                  <dd data-menu="resposta">
+                    {" "}
+                    Sim! desenvolvo lojas virtuais de qualidade e 100%
+                    personalizadas.
+                  </dd>
                 </div>
                 <div className={styles.linhaFaq}></div>
 
                 <div className={styles.contPerunta}>
-                  <div>
-                    <dt onClick={handleRes}>
-                      Preciso de uma API para meu projeto, você desenvolve?
-                    </dt>
-                    <dd data-menu="resposta">
-                      {" "}
-                      Sim! desenvolvo Rest API em Node.js.
-                    </dd>
-                  </div>
-                  <span className={styles.sinal}>+</span>
+                  <dt onClick={handleRes}>
+                    Preciso de uma API para meu projeto, você desenvolve?
+                  </dt>
+                  <dd data-menu="resposta">
+                    {" "}
+                    Sim! desenvolvo Rest API em Node.js.
+                  </dd>
                 </div>
                 <div className={styles.linhaFaq}></div>
 
                 <div className={styles.contPerunta}>
-                  <div>
-                    <dt onClick={handleRes}>Você cria landing page?</dt>
-                    <dd data-menu="resposta">
-                      {" "}
-                      Sim! desenvolvo landing pages voltadas diretamente para
-                      altas conversões.
-                    </dd>
-                  </div>
-                  <span className={styles.sinal}>+</span>
+                  <dt onClick={handleRes}>Você cria landing page?</dt>
+                  <dd data-menu="resposta">
+                    {" "}
+                    Sim! desenvolvo landing pages voltadas diretamente para
+                    altas conversões.
+                  </dd>
                 </div>
                 <div className={styles.linhaFaq}></div>
 
                 <div className={styles.contPerunta}>
-                  <div>
-                    <dt onClick={handleRes}>
-                      Preciso de um site para minha empresa, você cria sites
-                      institucionais?
-                    </dt>
-                    <dd data-menu="resposta">
-                      {" "}
-                      Sim! desenvolvo seu site, com a identidade visual de sua
-                      empresa.
-                    </dd>
-                  </div>
-                  <span className={styles.sinal}>+</span>
+                  <dt onClick={handleRes}>
+                    Preciso de um site para minha empresa, você cria sites
+                    institucionais?
+                  </dt>
+                  <dd data-menu="resposta">
+                    {" "}
+                    Sim! desenvolvo seu site, com a identidade visual de sua
+                    empresa.
+                  </dd>
                 </div>
                 <div className={styles.linhaFaq}></div>
 
                 <div className={styles.contPerunta}>
-                  <div>
-                    <dt onClick={handleRes}>
-                      Na contratação do serviço está incluso domínio e
-                      hospedagem?
-                    </dt>
-                    <dd data-menu="resposta">
-                      Não, é necessário que o cliente já possua domínio e
-                      hospedagem. Caso cliente não possua, irei auxiliá-lo.
-                    </dd>
-                  </div>
-                  <span className={styles.sinal}>+</span>
+                  <dt onClick={handleRes}>
+                    Na contratação do serviço está incluso domínio e hospedagem?
+                  </dt>
+                  <dd data-menu="resposta">
+                    Não, é necessário que o cliente já possua domínio e
+                    hospedagem. Caso cliente não possua, irei auxiliá-lo.
+                  </dd>
                 </div>
                 <div className={styles.linhaFaq}></div>
               </dl>
@@ -629,5 +600,3 @@ export default function Home() {
     </div>
   );
 }
-
-

@@ -56,7 +56,7 @@ img {
 
 .animaRotate {
   transform: rotate(360deg);
-  animation: animaRotate 60s forwards;
+  animation: animaRotate 100s forwards;
 }
 
 @keyframes animaRotate {
@@ -107,7 +107,8 @@ img {
 .active {
   transition: 1s;
   transform: rotate(90deg);
-  color: #fff !important;
+  background-color: #fff !important;
+  box-shadow:0 -8px #fff,0 8px #fff !important;
 }
 
 .menuDisplay {

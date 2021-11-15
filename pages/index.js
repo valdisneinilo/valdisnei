@@ -168,7 +168,7 @@ export default function Home() {
                 Sobre Mim
               </a>
             </li>
-            {/* <li><a href="#projetos" onClick={handleClick}>Projetos</a></li> */}
+
             <li>
               <a href="#tecnologias" onClick={handleClick}>
                 Tecnologias
@@ -225,17 +225,7 @@ export default function Home() {
               </p>
 
               <div className={styles.redes}>
-                {/* <div>
-                  <a href='' target="_blank" rel="noreferrer">
-                    <Image
-                      src="/instagram.png"
-                      alt="Picture of the author"
-                      width={20}
-                      height={20}
-                    />
-                  </a>
-                </div>
-                 */}
+               
                 <div>
                   <a
                     href="https://www.linkedin.com/in/valdisnei-nilo-656b67202/"
@@ -361,7 +351,6 @@ export default function Home() {
                 <li>React</li>
                 <li>Node</li>
                 <li>MySQL</li>
-                {/* <div class="linha4"></div> */}
               </ul>
             </div>
             <div className={styles.nomeArte2Cont}>

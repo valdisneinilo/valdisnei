@@ -277,77 +277,6 @@
 
 }
 
-/* 
-.containerProj{
-  display: flex;
-  justify-content: space-evenly;
-  position: relative;
-
-}
-
-.ProjetosCont{
-  width: 530px;
-  height: auto; 
-  background: #100D18;
-  border-radius: 8px;
-  margin-top: 1rem;
-  border-radius: 1rem;
-	background: linear-gradient(#222, #222), 
-	linear-gradient(to bottom, rgba(103, 255, 219, 0.41) -20.44%, rgba(0, 0, 0, 0) 134.61%);
-	background-origin: padding-box, border-box;
-	background-repeat: no-repeat;
-	border: 1px solid transparent;
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
-.imgProjeto{
-  margin: 25px 45px;
-}
-
-.textoProjeto{
-  margin: 25px 45px;
-}
-
-.textoProjeto div{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.textoProjeto h3{
-  font-family: Monument800;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 1px;
-}
-
-.textoProjeto p {
-  
-	font-family: Inter;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 1rem;
-	line-height: 26px;
-	letter-spacing: 0.2px;
-	color: rgba(255, 255, 255, 0.9);
-}
-
-.textoProjeto a{
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 26px;
-  letter-spacing: 0.2px;
-  color: #2ACFDA;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid;
-
-} */
-
 .tecnologias {
 	margin-top: 150px;
 	position: relative;
@@ -667,7 +596,7 @@
 
 /* anti span */
 
-/* **************************************************************************************************************************************************************************************************************** */
+
 
 /* RESPONSIVO TABLET */
 
@@ -828,13 +757,13 @@
 		margin-right: 3.125rem;
 	}
 
-	.faqPerguntas {}
+
 
 	.faqPerguntas {
 		width: 445px;
 	}
 
-	.faqPerguntas>div {}
+
 
 	.faqPerguntas dt {
 		font-size: .875rem;
@@ -922,8 +851,6 @@
 	}
 }
 
-
-/* **************************************************************************************************************************************************************************************************************** */
 
 /* RESPONSIVO SMARTPHONE */
 
@@ -1163,78 +1090,6 @@
 	.projetos {
 		display: none;
 	}
-
-	/* 
-	
-	.containerProj{
-		display: flex;
-		justify-content: space-evenly;
-		position: relative;
-	
-	}
-	
-	.ProjetosCont{
-		width: 18.75rem;
-		height: auto; 
-		background: #100D18;
-		border-radius: 8px;
-		margin-top: 1rem;
-		border-radius: 1rem;
-		background: linear-gradient(#222, #222), 
-		linear-gradient(to bottom, rgba(103, 255, 219, 0.41) -20.44%, rgba(0, 0, 0, 0) 134.61%);
-		background-origin: padding-box, border-box;
-		background-repeat: no-repeat;
-		border: 1px solid transparent;
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
-	
-	.imgProjeto{
-		margin: 25px 45px;
-	}
-	
-	.textoProjeto{
-		margin: 25px 45px;
-	}
-	
-	.textoProjeto div{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	
-	.textoProjeto h3{
-		font-family: Monument800;
-		font-style: normal;
-		font-weight: 800;
-		font-size: 16px;
-		line-height: 24px;
-		letter-spacing: 1px;
-	}
-	
-	.textoProjeto p {
-		
-		font-family: Inter;
-		font-style: normal;
-		font-weight: 400;
-		font-size: 1rem;
-		line-height: 26px;
-		letter-spacing: 0.2px;
-		color: rgba(255, 255, 255, 0.9);
-	}
-	
-	.textoProjeto a{
-		font-family: Inter;
-		font-style: normal;
-		font-weight: 500;
-		font-size: 14px;
-		line-height: 26px;
-		letter-spacing: 0.2px;
-		color: #2ACFDA;
-		padding-bottom: 1rem;
-		border-bottom: 1px solid;
-	
-	} */
 
 	.tecnologias {
 		margin-top: 3rem;

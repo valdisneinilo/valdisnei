@@ -37,11 +37,6 @@ img {
   max-width: 100%;
 }
 
-/*font-family: 'DM Sans', sans-serif;
-font-family: 'Inter', sans-serif;
-font-family: Monument800;
-font-family: Monument400;
-*/
 
 .ativo {
   display: block !important;
@@ -57,9 +52,6 @@ font-family: Monument400;
     transform: initial;
   }
 }
-
-
-
 
 
 .animaRotate {

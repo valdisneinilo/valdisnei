@@ -103,7 +103,7 @@ export default function Home() {
   }
 
   return (
-    <div >
+    <div className={styles.corpoSite}>
       <Head>
    
         
@@ -198,7 +198,7 @@ export default function Home() {
               como? Clique no botão abaixo. 🙋
             </p>
             <a
-              href="https://api.whatsapp.com/send?phone=5563991030921&text=Bom%20dia%20gostaria%20de%20falar%20sobre%20o%20desenvolvimento%20de%20um%20projeto"
+              href="https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F"
               target="_blank"
               rel="noreferrer"
             >

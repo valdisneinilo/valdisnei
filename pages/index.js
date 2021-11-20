@@ -103,7 +103,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div >
       <Head>
    
         
@@ -467,7 +467,7 @@ export default function Home() {
           <h2 className={styles.subtitulo}>Vamos iniciar um projeto?</h2>
           <p>
             Vamos dar vida às suas ideias, basta preencher o formulário para
-            conversarmos sobre o que podemos construir e elevar juntos.
+            conversarmos sobre o que podemos construir juntos.
           </p>
         </div>
         <div className={styles.containerformulario}>
@@ -590,7 +590,7 @@ export default function Home() {
       </section>
       <section className={styles.duvidas}></section>
 
-      <footer className={styles.footer}>
+      <footer className={styles.footer} >
         <p className={styles.developer}>
           Developed by <span>Valdisnei Nilo</span>
         </p>

@@ -2,12 +2,18 @@
 
 @font-face {
   font-family: Monument800;
-  src: url(../font/Monument\ Extended\ Ultrabold\ 800.otf)
+  src: url(../font/Monument\ Extended\ Ultrabold\ 800.otf),
+  url(https://valdisnei.vercel.app/_next/static/media/Monument%20Extended%20Regular%20400.41c61de7.otf);
+  font-weight: 800;
+  font-display: fallback;
 }
 
 @font-face {
   font-family: Monument400;
-  src: url(../font/Monument\ Extended\ Regular\ 400.otf)
+  src: url(../font/Monument\ Extended\ Regular\ 400.otf),
+  url(https://valdisnei.vercel.app/_next/static/media/Monument%20Extended%20Ultrabold%20800.b33587e5.otf);
+  font-weight: 400;
+  font-display: fallback;
 }
 
 

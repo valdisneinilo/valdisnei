@@ -1,6 +1,6 @@
 import Image from "next/dist/client/image";
 import styles from '../styles/Projetos.module.css'
-import Blur3 from "./components/blur3";
+import Blur3 from "./components/Blur3";
 
 const Projetos = () => {
   return (

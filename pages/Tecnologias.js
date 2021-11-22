@@ -1,5 +1,5 @@
 import styles from '../styles/Tecnologias.module.css'
-import Blur4 from './components/blur4'
+import Blur4 from './components/Blur4'
 import Linha4 from './components/Linha4'
 
 const Tecnologias = () => {

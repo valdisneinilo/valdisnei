@@ -3,13 +3,13 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "./Header";
 import QuemSou from "./QuemSou";
-import Projetos from "./Projetos";
+// import Projetos from "./Projetos";
 import Faq from "./Faq";
 import Tecnologias from "./Tecnologias";
 import Formulario from "./Formulario";
 import Footer from "./Footer";
 import Blur1 from "./components/Blur1";
-import Blur2 from "./components/blur2";
+import Blur2 from "./components/Blur2";
 import Whatsapp from "./components/Whatsapp";
 import Linha1 from "./components/Linha1";
 import Linha2 from "./components/Linha2";
@@ -87,7 +87,7 @@ export default function Home() {
           </div>
 
           <QuemSou/>
-          <Projetos/>
+          {/* <Projetos/> */}
           <Tecnologias/>
           <Faq/>
 

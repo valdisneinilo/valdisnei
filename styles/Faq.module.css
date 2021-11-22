@@ -1,0 +1,147 @@
+.faq{
+  position:relative
+}
+.faq a{
+  color:#FF82A7
+}
+.faq>div{
+  display:flex;
+  flex-wrap:wrap
+}
+.faq p{
+  width:445px;
+  font-family:Inter;
+  font-style:normal;
+  font-weight:500;
+  font-size:16px;
+  line-height:26px;
+  letter-spacing:.2px;
+  margin-right:3.125rem
+}
+.contPerunta{
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  position:relative;
+  flex-direction: column;
+}
+.contPerunta div{
+  max-width:400px
+}
+.faqPerguntas dt{
+  font-family:Inter;
+  font-style:normal;
+  font-weight:500;
+  font-size:16px;
+  line-height:24px;
+  letter-spacing:.2px;
+  color:#FFF;
+  cursor:pointer
+}
+.faqPerguntas dt::before{
+  content:"";
+  display:inline-flex;
+  margin-right:1rem;
+  border-radius:100%;
+  width:5px;height:5px;
+  background:#FFF
+}
+.faqPerguntas dd{
+  width:417px;
+  font-family:Inter;
+  font-style:normal;
+  font-weight:400;
+  font-size:16px;
+  line-height:26px;
+  letter-spacing:.2px;
+  color:rgba(255,255,255,0.8);
+  display:none;
+  opacity:0;
+  padding:.5rem;
+  transition:1s
+}
+.linhaFaq{
+  width:713px;
+  height:0;
+  border:1px solid #2E2E2E;
+  margin-top:17px;
+  margin-bottom:15px
+}
+.sinal{
+  font-size:1.2rem
+}
+.risco{
+  text-decoration:line-through
+}
+
+@media (max-width: 1000px){
+  .faq p{
+    width:18.75rem;
+    font-size:.875rem;
+    line-height:1.4rem;
+    margin-right:3.125rem
+  }
+  .faqPerguntas{
+    width:445px
+  }
+  .faqPerguntas dt{
+    font-size:.875rem;
+    line-height:1.4rem
+  }
+  .faqPerguntas dd{
+    font-size:.875rem;
+    line-height:1.4rem
+  }
+  .linhaFaq{
+    margin-top:.8rem;
+    margin-bottom:.7rem;
+    width:445px
+  }
+}
+
+@media (max-width: 750px){
+  .faq>div{
+    display:flex;
+    flex-wrap:wrap
+  }
+  .faq p{
+    margin-right:0;
+    max-width:17.5rem;
+    font-size:.875rem;
+    line-height:1.5rem;
+    color:rgba(255,255,255,0.8)
+  }
+  .contPerunta div{
+    max-width:15.75rem
+  }
+  .faqPerguntas dt{
+    font-size:.875rem;
+    line-height:1.4rem;
+    color:rgba(255,255,255,0.8)
+  }
+  .faqPerguntas dt::before{
+    margin-right:.5rem
+  }
+  .faqPerguntas dd{
+    width:17rem;
+    font-size:.875rem;
+    line-height:1.4rem;
+    color:rgba(255,255,255,0.8);
+    margin-left:0;
+    padding-left:1rem;
+    margin-top:.675rem
+  }
+  .linhaFaq{
+    width:90%;
+    height:0;
+    border:1px solid #2E2E2E;
+    margin-top:17px;
+    margin-bottom:15px
+  }
+  .sinal{
+    font-size:1.2rem
+  }
+  .risco{
+    text-decoration:line-through
+  }
+}

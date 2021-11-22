@@ -1,0 +1,85 @@
+.quemSou{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap
+}
+.quemSouTexto p{
+  width:430px;
+  font-family:Inter;
+  font-style:normal;
+  font-weight:500;
+  font-size:16px;
+  line-height:26px;
+  letter-spacing:.2px
+}
+.quemSouTexto span{
+  color:#FC8CAB
+}
+.redes{
+  display:flex;
+  width:445px;
+  align-items:center
+}
+.redes div{
+  padding:5px;
+  margin-right:25px;
+  cursor:pointer;
+}
+.textoCirculo{
+  position:absolute
+}
+.nomeArte{
+  font-family:Monument800;
+  font-style:normal;
+  font-weight:800;
+  font-size:289px;
+  line-height:347px;
+  letter-spacing:.2px
+  ;opacity:.08;
+  text-align:right
+}
+
+@media (max-width: 1000px){
+  .quemSouTexto p{
+    width:18.75rem;
+    font-size:.875rem;
+    line-height:1.425rem;
+    letter-spacing:.2px
+  }
+  .textoCirculo{
+    right:4rem
+  }
+}
+
+@media (max-width: 750px){
+  .quemSou{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap
+  }
+  .quemSouTexto p{
+    max-width:17.5rem;
+    font-size:.875rem;
+    line-height:1.5rem;
+    color:rgba(255,255,255,0.8)
+  }
+  .redes{
+    max-width:10rem
+  }
+  .redes div{
+    padding:.3125rem;
+    margin-right:.9375rem;
+    cursor:pointer
+  }
+  .textoCirculo{
+    position:relative;
+    left:1rem;
+    width:5rem;
+    margin-top:1rem
+  }
+  .nomeArte{
+    font-size:8rem;
+    line-height:0
+  }
+
+}

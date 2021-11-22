@@ -1,1 +1,169 @@
-.main{min-height:100vh;padding:1rem 8rem;background-color:rgb(12, 12, 12);color:#fff;width:100%; font-family: monospace;}.menuButton{display:none}.whatsapp{position:fixed;top:4.1875rem;right:10%;z-index:100}.subtitulo{font-family:Monument800;font-style:normal;font-weight:800;font-size:1.1rem;line-height:1.5rem;letter-spacing:.0125rem;width:13.75rem;background:linear-gradient(92.33deg,#DFFFD7 10.39%,#FF82A7 55.67%);background-clip:border-box;-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.875rem}.header ul{display:flex;justify-content:center;align-items:center;border-bottom:1px solid #2B2639}.header ul li{font-family:Inter;font-style:normal;font-weight:400;font-size:.875rem;line-height:1.0625rem;margin:0 1.4375rem;margin-bottom:2.5rem;cursor:pointer}.ellipse1{position:absolute;width:35.9375rem;height:38.75rem;left:10%;top:0;background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);filter:blur(7.375rem)}.ellipse2{position:absolute;width:25.9375rem;height:38.75rem;left:60%;top:50%;background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);filter:blur(9.375rem)}.ellipse3{position:absolute;width:25.9375rem;height:28.75rem;left:40%;top:20%;background:rgba(255,185,186,0.2);filter:blur(6.25rem)}.ellipse{position:absolute;width:35.9375rem;height:28.75rem;left:38%;top:0;background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);filter:blur(8.375rem)}.home{max-width:100rem;margin:0 auto;max-width:1800px}.tituloContainer{display:flex;justify-content:center;align-items:center;flex:1;position:relative}.tituloContainer h2{margin-top:9.25rem;font-family:Monument400;font-style:normal;font-weight:400;font-size:.75rem;line-height:.875rem;letter-spacing:1px;padding:.1rem;background:#0B3344;max-width:18.75rem;border-radius:1rem;background:linear-gradient(#222,#222),linear-gradient(272.92deg,rgba(103,255,219,0.41) -20.44%,rgba(0,0,0,0) 134.61%);background-origin:padding-box,border-box;background-repeat:no-repeat;border:1px solid transparent;text-align:center}.tituloContainer h1{width:60.25rem;font-family:Monument800;font-style:normal;font-weight:800;font-size:10rem;text-align:right;margin:0}.linha1{border:1px solid;width:18.75rem;margin-top:-200px;background:linear-gradient(#222,#222),linear-gradient(to right,rgba(103,255,219,0.41) -20.44%,rgba(0,0,0,0) 134.61%);background-origin:padding-box,border-box;background-repeat:no-repeat;border:1px solid transparent;margin-left:1rem}.linha2{border:1px solid;margin-top:200px;width:300px;margin-left:60%;background:linear-gradient(#222,#222),linear-gradient(to right,rgba(103,255,219,0.41) -20.44%,rgba(0,0,0,0) 134.61%);background-origin:padding-box,border-box;background-repeat:no-repeat;border:1px solid transparent}.chamadaContato{font-family:'Inter',sans-serif;font-style:normal}.chamadaContato p{width:445px;font-weight:400;font-size:1.1rem;line-height:26px;letter-spacing:.2px}.chamadaContato button{font-weight:600;font-size:14px;line-height:17px;color:#050509;width:214px;height:60px;border-radius:8px;margin-top:27px;margin-bottom:162px;border:none;cursor:pointer;z-index:50}.chamadaContato span{padding-left:.2rem}.quemSou{display:flex;justify-content:space-between;flex-wrap:wrap}.quemSouTexto p{width:430px;font-family:Inter;font-style:normal;font-weight:500;font-size:16px;line-height:26px;letter-spacing:.2px}.quemSouTexto span{color:#FC8CAB}.redes{display:flex;width:445px;align-items:center}.redes div{padding:5px;margin-right:25px;cursor:pointer;}.textoCirculo{position:absolute}.nomeArte{font-family:Monument800;font-style:normal;font-weight:800;font-size:289px;line-height:347px;letter-spacing:.2px;opacity:.08;text-align:right}.linha3{border:1px solid;margin-top:10px;width:300px;margin-left:30%;margin-bottom:90px;background:linear-gradient(#222,#222),linear-gradient(to right,rgba(103,255,219,0.41) -20.44%,rgba(0,0,0,0) 134.61%);background-origin:padding-box,border-box;background-repeat:no-repeat;border:1px solid transparent}.projetos{display:none}.tecnologias{margin-top:150px;position:relative}.tecnologiasDiv{display:flex;flex-wrap:wrap}.tecnologias p{width:445px;font-family:Inter;font-style:normal;font-weight:500;font-size:16px;line-height:26px;letter-spacing:.2px;margin-right:50px}.listaTec{text-align:left;max-width:300px;-webkit-column-count:2;-moz-column-count:2;column-count:2;font-family:Inter}.listaTec li{padding:10px;font-size:1.5rem}.nomeArte2{font-family:Monument800;font-style:normal;font-weight:800;font-size:5rem;letter-spacing:.2px;opacity:.08;text-align:right;position:relative}.linha4{border:1px solid;margin-top:10px;width:300px;margin-left:50%;margin-bottom:90px;background:linear-gradient(#222,#222),linear-gradient(to right,rgba(103,255,219,0.41) -20.44%,rgba(0,0,0,0) 134.61%);background-origin:padding-box,border-box;background-repeat:no-repeat;border:1px solid transparent}.faq{position:relative}.faq a{color:#FF82A7}.faq>div{display:flex;flex-wrap:wrap}.faq p{width:445px;font-family:Inter;font-style:normal;font-weight:500;font-size:16px;line-height:26px;letter-spacing:.2px;margin-right:3.125rem}.contPerunta{display:flex;align-items:baseline;justify-content:space-between;position:relative;flex-direction: column;}.contPerunta div{max-width:400px}.faqPerguntas dt{font-family:Inter;font-style:normal;font-weight:500;font-size:16px;line-height:24px;letter-spacing:.2px;color:#FFF;cursor:pointer}.faqPerguntas dt::before{content:"";display:inline-flex;margin-right:1rem;border-radius:100%;width:5px;height:5px;background:#FFF}.faqPerguntas dd{width:417px;font-family:Inter;font-style:normal;font-weight:400;font-size:16px;line-height:26px;letter-spacing:.2px;color:rgba(255,255,255,0.8);display:none;opacity:0;padding:.5rem;transition:1s}.linhaFaq{width:713px;height:0;border:1px solid #2E2E2E;margin-top:17px;margin-bottom:15px}.sinal{font-size:1.2rem}.risco{text-decoration:line-through}.formCont{display:flex;justify-content:space-around;flex-wrap:wrap;padding:2rem 3rem;max-width:1800px;margin:0 auto}.textForm h2{width:620px;font-family:Monument400;font-weight:400;font-size:72px;line-height:115px;letter-spacing:-5px;background:linear-gradient(270.57deg,#E7B2AB -47.05%,#7B83CA 142.32%);background-clip:border-box;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.textForm p{width:419px;font-family:Inter;font-style:normal;font-weight:400;font-size:18px;line-height:26px;letter-spacing:.2px;color:rgba(26,26,37,0.8);text-align:left}.containerformulario{display:flex;justify-content:center}.formulario{display:flex;flex-direction:column;justify-content:center;margin-top:50px}.formulario input,.formulario select{font-family:Inter,sans-serif;font-style:normal;font-weight:400;font-size:16px;line-height:21px;letter-spacing:.2px;color:#37424D;padding:1rem;border:none;background:none;border-bottom:1px solid rgba(0,0,0,0.7);width:393px}.formulario input:hover,.formulario select:hover,.formulario input:focus,.formulario select:focus{outline:none}.formulario input:focus,.formulario select:focus{border-color:#E7B2AB}.formulario button{font-weight:600;font-size:14px;line-height:17px;color:#fff;width:214px;height:60px;border-radius:8px;margin-top:27px;border:none;cursor:pointer;background:#000;margin-bottom:1rem}.duvida span{padding-left:.2rem}.contatos>p{font-family:Inter;font-style:normal;font-weight:400;font-size:14px;line-height:21px;letter-spacing:.2px}.contatos div{margin-top:.5rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem}.contatos>div p{font-family:Inter;font-style:normal;font-weight:500;font-size:16px;line-height:21px;letter-spacing:.2px}.footer{display:flex;max-width:1400px;margin:0 auto;justify-content:space-between}.footer p{font-family:Inter;font-style:normal;font-weight:500;font-size:12px;line-height:21px;letter-spacing:.2px;padding:65px;text-align:right}.footer h2{font-family:Monument800;font-style:normal;font-weight:500;font-size:12px;line-height:21px;letter-spacing:.2px;padding:65px}.footer span{font-family:Monument800}.nao{visibility:hidden;position:absolute;height:0}@media (max-width: 1000px){.header ul{display:flex;justify-content:center;align-items:center;border-bottom:1px solid #2B2639}.header ul li{font-size:.7rem;line-height:1rem;margin:0 1.2rem;margin-bottom:2.5rem}.ellipse2{left:60%;top:10%;height:10rem}.ellipse3{left:30%;top:10%}.ellipse{height:10rem;left:8%;top:0}.tituloContainer div{max-width:18.75rem}.home{max-width:100rem;margin:0 auto}.tituloContainer{display:flex;justify-content:center;align-items:center;flex:1;position:relative}.tituloContainer h2{margin-top:5rem;font-size:.5rem;line-height:.1rem;padding:.3rem;background:#0B3344;max-width:10rem}.tituloContainer h1{width:25rem;font-size:4rem}.chamadaContato p{width:18.75rem;font-size:.875rem;line-height:1.2rem}.chamadaContato button{font-size:.875rem;line-height:1rem;width:10.75rem;height:2.5rem;margin-top:1.6875rem;margin-bottom:5rem;z-index:70}.quemSouTexto p{width:18.75rem;font-size:.875rem;line-height:1.425rem;letter-spacing:.2px}.textoCirculo{right:4rem}.linha3{margin-top:0;margin-left:20%;margin-bottom:40px}.imgProjeto{margin:.2rem}.textoProjeto{margin:.2rem}.textoProjeto h3{font-size:.875rem}.textoProjeto p{font-size:.875rem;letter-spacing:.2px;color:rgba(255,255,255,0.9)}.tecnologias{margin-top:5rem;position:relative}.tecnologiasDiv{display:flex;flex-wrap:wrap}.tecnologias p{width:18.75rem;font-size:.875rem;line-height:1.4rem}.listaTec li{padding:.5rem;font-size:1.3rem}.faq p{width:18.75rem;font-size:.875rem;line-height:1.4rem;margin-right:3.125rem}.faqPerguntas{width:445px}.faqPerguntas dt{font-size:.875rem;line-height:1.4rem}.faqPerguntas dd{font-size:.875rem;line-height:1.4rem}.linhaFaq{margin-top:.8rem;margin-bottom:.7rem;width:445px}.formCont{padding:0}.textForm h2{font-size:3.5rem;line-height:4rem;opacity:.8}.textForm p{width:18.75rem;font-size:.875rem;line-height:1.4rem}.formulario{display:flex;flex-direction:column;justify-content:center;margin-top:2rem}.formulario input,.formulario select{font-size:.875rem;line-height:1.4rem;padding:1rem}.formulario button{font-size:.875rem;line-height:1rem;width:10.75rem;height:2.5rem;margin-top:1.6875rem;margin-bottom:5rem}.contatos div{margin-top:.5rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem}.contatos>div p{font-size:.875rem;line-height:1.4rem}.footer p{font-size:.7rem;line-height:1.2rem;padding:2rem}}@media (max-width: 750px){.corpoSite{display: grid; grid-template-columns: 1fr; width: 100%;}.main{padding:1rem 3rem;width:100%;display: grid;grid-template-columns: 1fr;}.whatsapp{position:fixed;top:4.1875rem;right:.6375rem;z-index:100}.menuButton{display:block;position:fixed;left:.6375rem;top:4.1875rem;border:none;cursor:pointer;z-index:300;transition:1s;width:30px;background-color:#7B83CA;height:1px;box-shadow:0 -8px #7B83CA,0 8px #7B83CA}.header div{padding:20px;position:fixed;left:.6375rem;top:3rem;border:none;cursor:pointer;z-index:300}.header ul{transition:1s;display:none;opacity:0;background-color:#606bd1;max-width:8.25rem;z-index:250;padding:3.125rem 0 .625rem;position:fixed;top:2.125rem;left:.3125rem;border-radius:.5rem}.header ul li{line-height:.5rem;margin:.5rem;margin-bottom:1.5rem;font-family:Monument400;padding:.5rem;padding-bottom:1rem;letter-spacing:.1rem;margin-bottom:.875rem;background:linear-gradient(92.33deg,#DFFFD7 10.39%,#FF82A7 40.67%);background-clip:border-box;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.subtitulo{font-size:1.01rem;background-clip:border-box;-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin-bottom:.875rem;background:linear-gradient(92.33deg,#DFFFD7 10.39%,#FF82A7 40.67%);background-clip:border-box;-webkit-background-clip:text;-webkit-text-fill-color:transparent}.ellipse1{position:absolute;width:25.9375rem;height:18.75rem;left:0;top:0}.ellipse2{position:absolute;width:15.9375rem;height:18.75rem;left:0;top:30%;background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);filter:blur(9.375rem)}.ellipse3{display:none;position:absolute;width:25.9375rem;height:28.75rem;left:40%;top:20%;background:rgba(255,185,186,0.2);filter:blur(6.25rem)}.ellipse{position:absolute;width:10.9375rem;height:28.75rem;left:5%;top:0;background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);filter:blur(5.375rem)}.home{width:17rem}.treituloContainer{display:flex;justify-content:center;align-items:center;flex:1;position:relative;width:100%}.tituloContainer h2{margin-top:9.25rem;font-size:.525rem;line-height:.875rem;letter-spacing:1px;padding:.2rem;max-width:10rem}.tituloContainer h1{max-width:17rem;font-size:2.25rem;text-align:right;margin:0}.linha1{width:12.25rem;margin-left:1.5rem}.linha2{width:12.25rem;margin-left:5rem}.chamadaContato{font-family:'Inter',sans-serif;font-style:normal;display:flex;flex-direction:column;align-items:center}.chamadaContato p{width:14.625rem;font-size:.875rem;line-height:1.5rem;align-self:center;color:rgba(255,255,255,0.8);z-index:50}.chamadaContato button{font-size:.875rem;line-height:1.0625rem;width:13.375rem;height:3.75rem;margin-top:1rem;margin-bottom:4.9375rem;z-index:50}.quemSou{display:flex;justify-content:space-between;flex-wrap:wrap}.quemSouTexto p{max-width:17.5rem;font-size:.875rem;line-height:1.5rem;color:rgba(255,255,255,0.8)}.redes{max-width:10rem}.redes div{padding:.3125rem;margin-right:.9375rem;cursor:pointer}.textoCirculo{position:relative;left:1rem;width:5rem;margin-top:1rem}.nomeArte{font-size:8rem;line-height:0}.linha3{margin-top:3rem;width:12.25rem;margin-left:30%;margin-bottom:3rem}.projetos{display:none}.tecnologias{margin-top:3rem;position:relative}.tecnologiasDiv{display:flex}.tecnologias p{margin-right:0;max-width:17.5rem;font-size:.875rem;line-height:1.5rem;color:rgba(255,255,255,0.8);z-index:50}.listaTec{text-align:left;width:100%;-webkit-column-count:2;-moz-column-count:2;column-count:2;padding:0;z-index:50}.listaTec li{padding:.3rem;font-size:1.2rem}.nomeArte2{max-width:18rem;font-size:2.8rem;opacity:.08;text-align:left;z-index:50}.linha4{margin-top:.625rem;width:12.5rem;margin-left:30%;margin-bottom:3rem}.faq>div{display:flex;flex-wrap:wrap}.faq p{margin-right:0;max-width:17.5rem;font-size:.875rem;line-height:1.5rem;color:rgba(255,255,255,0.8)}.contPerunta div{max-width:15.75rem}.faqPerguntas dt{font-size:.875rem;line-height:1.4rem;color:rgba(255,255,255,0.8)}.faqPerguntas dt::before{margin-right:.5rem}.faqPerguntas dd{width:17rem;font-size:.875rem;line-height:1.4rem;color:rgba(255,255,255,0.8);margin-left:0;padding-left:1rem;margin-top:.675rem}.linhaFaq{width:90%;height:0;border:1px solid #2E2E2E;margin-top:17px;margin-bottom:15px}.sinal{font-size:1.2rem}.risco{text-decoration:line-through}.formCont{flex-direction:column;max-width:100%;margin:0 auto;padding:1rem 3rem;align-items:center}.textForm{max-width:17rem}.containerformulario{max-width:17rem}.textForm h2{max-width:17.75rem;font-size:2.5rem;line-height:3rem;letter-spacing:.2px}.textForm p{text-align:left;max-width:17rem;font-size:.875rem;line-height:1.5rem}.formulario{margin:0 auto}.formulario input,.formulario select{font-size:.875rem;line-height:1.5rem;max-width:17rem;padding-left:0}.formulario button{width:13.375rem;height:3.75rem;margin-bottom:1rem;align-self:center}.contatos>p{display:none}.contatos div{display:none}.footer{display:flex;max-width:17rem ;flex-direction:column}.footer p{font-size:12px;line-height:21px;padding:.3rem;max-width:18.75rem;text-align:center;margin:0}.developer{order:1}}@media (max-width:350px){.main{padding:1rem}.formCont{padding:1rem}.nomeArte2{width:17rem;font-size:2.5rem}}
+.home{
+  max-width:100rem;
+  margin:0 auto
+
+}
+
+.tituloContainer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative
+}
+
+.tituloContainer h2{
+  margin-top:9.25rem;
+  font-family:Monument400;
+  font-weight:400;
+  font-size:.75rem;
+  letter-spacing:1px;
+  padding:.3rem;
+  background:#0B3344;
+  max-width:18.75rem;
+  border-radius:1rem;
+  background:linear-gradient(#222);
+  text-align:center
+}
+
+.tituloContainer h1{
+  width:60.25rem;
+  font-family:Monument800;
+  font-style:normal;
+  font-weight:800;
+  font-size:10rem;
+  text-align:right;
+  margin:0;
+}
+
+.chamadaContato{
+  font-family:'Inter',sans-serif;
+  font-style:normal
+}
+
+.chamadaContato p{
+  width:445px;
+  font-weight:400;
+  font-size:1.1rem;
+  line-height:26px;
+  letter-spacing:.2px
+}
+
+.chamadaContato button{
+  font-weight:600;
+  font-size:14px;
+  line-height:17px;
+  color:#050509;
+  width:214px;
+  height:60px;
+  border-radius:8px;
+  margin-top:27px;
+  margin-bottom:162px;
+  border:none;
+  cursor:pointer;
+  z-index:50;
+  background: #fff;
+}
+
+.chamadaContato span{
+  padding-left:.2rem;
+}
+
+
+
+@media (max-width: 1000px){
+
+  .tituloContainer div{
+    max-width:18.75rem
+  }
+ 
+  .tituloContainer h2{
+    margin-top:5rem;
+    font-size:.5rem;
+    max-width:10rem
+  }
+  .tituloContainer h1{
+    width:25rem;
+    font-size:4rem
+  }
+  .chamadaContato p{
+    width:18.75rem;
+    font-size:.875rem;
+    line-height:1.2rem
+  }
+  .chamadaContato button{
+    font-size:.875rem;
+    line-height:1rem;
+    width:10.75rem;
+    height:2.5rem;
+    margin-top:1.6875rem;
+    margin-bottom:5rem;
+  }
+
+}
+
+@media (max-width: 750px){
+  .whatsapp{
+    position:fixed;
+    top:4.1875rem;
+    right:.6375rem;
+    z-index:100
+  }
+  .subtitulo{
+    font-size:1.01rem;
+    background-clip:border-box;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:.875rem;
+    background:linear-gradient(92.33deg,#DFFFD7 10.39%,#FF82A7 40.67%);background-clip:border-box;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+  }
+  
+  .home{
+    width:17rem
+  }
+
+  .tituloContainer h2{
+    margin-top:9.25rem;
+    font-size:.525rem;
+    letter-spacing:1px;
+    padding:.3rem;
+    max-width:10rem
+  }
+  .tituloContainer h1{
+    max-width:17rem;
+    font-size:2.25rem;
+  }
+ 
+  .chamadaContato{
+    display:flex;
+    flex-direction:column;
+    align-items:center
+  }
+  .chamadaContato p{
+    width:14.625rem;
+    font-size:.875rem;
+    line-height:1.5rem;
+    align-self:center;
+    color:rgba(255,255,255,0.8);
+    z-index:50
+  }
+  .chamadaContato button{
+    width:13.375rem;
+    height:3.75rem;
+    z-index:50;
+  }
+}
+
+@media (max-width:350px){
+  .main{
+    padding:1rem
+  }
+  .formCont{
+    padding:1rem
+  }
+  .nomeArte2{
+    width:17rem;
+    font-size:2.5rem
+  }
+}

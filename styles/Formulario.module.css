@@ -1,0 +1,200 @@
+.formCont{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  padding:2rem 3rem;
+  max-width:1800px;
+  margin:0 auto
+}
+.textForm h2{
+  width:620px;
+  font-family:Monument400;
+  font-weight:400;
+  font-size:72px;
+  line-height:115px;
+  letter-spacing:-5px;
+  background:linear-gradient(270.57deg,#E7B2AB -47.05%,#7B83CA 142.32%);
+  background-clip:border-box;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent
+}
+.textForm p{
+  width:419px;
+  font-family:Inter;
+  font-style:normal;
+  font-weight:400;
+  font-size:18px;
+  line-height:26px;
+  letter-spacing:.2px;
+  color:rgba(26,26,37,0.8);
+  text-align:left
+}
+.containerformulario{
+  display:flex;
+  justify-content:center
+}
+.formulario{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  margin-top:50px
+}
+.formulario input,.formulario select{
+  font-family:Inter,sans-serif;
+  font-style:normal;
+  font-weight:400;
+  font-size:16px;
+  line-height:21px;
+  letter-spacing:.2px;
+  color:#37424D;
+  padding:1rem;
+  border:none;
+  background:none;
+  border-bottom:1px solid rgba(0,0,0,0.7);
+  width:393px
+}
+.formulario input:hover,.formulario select:hover,.formulario input:focus,.formulario select:focus{
+  outline:none
+}
+.formulario input:focus,.formulario select:focus{
+  border-color:#E7B2AB
+}
+.formulario button{
+  font-weight:600;
+  font-size:14px;
+  line-height:17px;
+  color:#fff;
+  width:214px;
+  height:60px;
+  border-radius:8px;
+  margin-top:27px;
+  border:none;
+  cursor:pointer;
+  background:#000;
+  margin-bottom:1rem
+}
+.duvida span{
+  padding-left:.2rem
+}
+.contatos>p{
+  font-family:Inter;
+  font-style:normal;
+  font-weight:400;
+  font-size:14px;
+  line-height:21px;
+  letter-spacing:.2px
+}
+.contatos div{
+  margin-top:.5rem;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:2rem
+}
+.contatos>div p{
+  font-family:Inter;
+  font-style:normal;
+  font-weight:500;
+  font-size:16px;
+  line-height:21px;
+  letter-spacing:.2px
+}
+
+.nao{visibility:hidden;position:absolute;height:0}
+
+@media (max-width: 1000px){
+  .formCont{
+    padding:0
+  }
+  .textForm h2{
+    font-size:3.5rem;
+    line-height:4rem;
+    opacity:.8
+  }
+  .textForm p{
+    width:18.75rem;
+    font-size:.875rem;
+    line-height:1.4rem
+  }
+  .formulario{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-top:2rem
+  }
+  .formulario input,.formulario select{
+    font-size:.875rem;
+    line-height:1.4rem;
+    padding:1rem
+  }
+  .formulario button{
+    font-size:.875rem;
+    line-height:1rem;
+    width:10.75rem;
+    height:2.5rem;
+    margin-top:1.6875rem;
+    margin-bottom:5rem
+  }
+  .contatos div{
+    margin-top:.5rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:2rem
+  }
+  .contatos>div p{
+    font-size:.875rem;
+    line-height:1.4rem
+  }
+}
+
+@media (max-width: 750px){
+  .formCont{
+    flex-direction:column;
+    max-width:100%;
+    margin:0 auto;
+    align-items:center
+  }
+  .textForm{
+    max-width:17rem
+  }
+  .containerformulario{
+    max-width:17rem
+  }
+  .textForm h2{
+    max-width:17.75rem;
+    font-size:2.5rem;
+    line-height:3rem;
+    letter-spacing:.2px
+  }
+  .textForm p{
+    text-align:left;
+    max-width:17rem;
+    font-size:.875rem;
+    line-height:1.5rem
+  }
+  .formulario{
+    margin:0 auto
+  }
+  .formulario input,.formulario select{
+    font-size:.875rem;
+    line-height:1.5rem;
+    max-width:17rem;
+    padding-left:0
+  }
+  .formulario button{
+    width:13.375rem;
+    height:3.75rem;
+    margin-bottom:1rem;
+    align-self:center
+  }
+  .contatos>p{
+    display:none
+  }
+  .contatos div{
+    display:none
+  }
+}
+
+@media (max-width:350px){
+
+
+}

@@ -64,7 +64,7 @@ export default function Home() {
             </p>
             <Link
               href="https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F"
-              rel="preconnect"
+              rel="preload"
             >
               <a target="_blank">
                 <button>

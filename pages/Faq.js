@@ -63,17 +63,6 @@ const Faq = () => {
           <div className={styles.linhaFaq}></div>
 
           <div className={styles.contPerunta}>
-            <dt onClick={handleRes}>
-              Preciso de uma API para meu projeto, você desenvolve?
-            </dt>
-            <dd data-menu="resposta">
-              {" "}
-              Sim! desenvolvo Rest API em Node.js.
-            </dd>
-          </div>
-          <div className={styles.linhaFaq}></div>
-
-          <div className={styles.contPerunta}>
             <dt onClick={handleRes}>Você cria landing page?</dt>
             <dd data-menu="resposta">
               {" "}

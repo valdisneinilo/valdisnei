@@ -1,6 +1,7 @@
 import styles from '../styles/QuemSou.module.css';
 import Image from 'next/dist/client/image';
 import Linha3 from './components/Linha3';
+import Link from 'next/dist/client/link';
 
 const QuemSou = () => {
   return (
@@ -18,26 +19,26 @@ const QuemSou = () => {
 
         <div className={styles.redes}>
           <div>
-            <a
-              href="https://www.linkedin.com/in/valdisnei-nilo-656b67202/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Image
-                src="/linkedin.png"
-                alt="Picture of the author"
-                width={19}
-                height={14}
-              />
-            </a>
+            <Link
+             href="https://www.linkedin.com/in/valdisnei-nilo-656b67202/"
+             rel='preconnect'
+             >
+              <a target="_blank">
+                <Image
+                  src="/linkedin.png"
+                  alt="Picture of the author"
+                  width={19}
+                  height={14}
+                />
+              </a>
+            </Link>
           </div>
 
           <div>
-            <a
-              href="https://github.com/valdisneinilo"
-              target="_blank"
-              rel="noreferrer"
+            <Link href="https://github.com/valdisneinilo" 
+              rel="preconnect"
             >
+            <a target="_blank">
               <Image
                 src="/github.png"
                 alt="Picture of the author"
@@ -45,6 +46,7 @@ const QuemSou = () => {
                 height={20}
               />
             </a>
+            </Link>
           </div>
         </div>
       </div>

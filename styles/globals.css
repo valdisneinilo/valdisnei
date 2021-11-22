@@ -51,7 +51,6 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color:rgb(12, 12, 12);
 
 }
 
@@ -330,7 +329,7 @@ img {
 
 .animaBlur {
   opacity: 0;
-  animation: animaBlur 3s forwards;
+  animation: animaBlur 1s forwards;
 }
 
 @keyframes animaBlur {
@@ -342,7 +341,7 @@ img {
 
 .animaNome {
   opacity: 0;
-  animation: animaNome 2s forwards;
+  animation: animaNome .5s forwards;
 }
 
 @keyframes animaNome {

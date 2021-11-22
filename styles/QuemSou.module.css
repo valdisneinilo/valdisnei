@@ -26,17 +26,7 @@
   cursor:pointer;
 }
 .textoCirculo{
-  position:absolute
-}
-.nomeArte{
-  font-family:Monument800;
-  font-style:normal;
-  font-weight:800;
-  font-size:289px;
-  line-height:347px;
-  letter-spacing:.2px
-  ;opacity:.08;
-  text-align:right
+  position:absolute;
 }
 
 @media (max-width: 1000px){
@@ -77,9 +67,11 @@
     width:5rem;
     margin-top:1rem
   }
+
+  
   .nomeArte{
     font-size:8rem;
-    line-height:0
+    margin-top: -100px;
   }
 
 }

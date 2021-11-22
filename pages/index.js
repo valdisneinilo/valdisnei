@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "./Header";
 import QuemSou from "./QuemSou";
-// import Projetos from "./Projetos";
 import Faq from "./Faq";
 import Tecnologias from "./Tecnologias";
 import Formulario from "./Formulario";
@@ -15,7 +14,6 @@ import Linha1 from "./components/Linha1";
 import Linha2 from "./components/Linha2";
 
 export default function Home() {
- 
   return (
     <div className="corpoSite">
       <Head>
@@ -35,30 +33,26 @@ export default function Home() {
         />
         <meta
           property="og:description"
-          content="Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e sistemas web transformo ideias em resultados através de linhas de código. "
+          content="Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e sistemas web transformo ideias em resultados através de linhas de código."
         />
         <meta property="og:url" content="https://valdev.com.br" />
-        <meta
-          property="og:image"
-          content="https://valdev.com.br/public/og-image.png"
-        />
 
         <title>Valdisnei Nilo || Desenvolvedor Full Stack</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="main">
-        <Header/>
-        <Whatsapp/>
-        <section className={styles.home }>
+        <Header />
+        <Whatsapp />
+        <section className={styles.home}>
           <div className={styles.tituloContainer}>
             <div>
-              <Blur1/>
-              <Blur2/>
+              <Blur1 />
+              <Blur2 />
               <h2>Full Stack Developer</h2>
               <h1 className="animaNome">Valdisnei Nilo.</h1>
-              <Linha1/>
-              <Linha2/>
+              <Linha1 />
+              <Linha2 />
             </div>
           </div>
 
@@ -86,16 +80,14 @@ export default function Home() {
             </a>
           </div>
 
-          <QuemSou/>
-          {/* <Projetos/> */}
-          <Tecnologias/>
-          <Faq/>
-
+          <QuemSou />
+          <Tecnologias />
+          <Faq />
         </section>
       </main>
       <section className="segundaSection">
-        <Formulario/>
-        <Footer/>
+        <Formulario />
+        <Footer />
       </section>
     </div>
   );

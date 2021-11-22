@@ -308,7 +308,7 @@ img {
 
 .animaRotate {
   transform: rotate(360deg);
-  animation: animaRotate 100s forwards;
+  animation: animaRotate 20s forwards;
 }
 
 @keyframes animaRotate {

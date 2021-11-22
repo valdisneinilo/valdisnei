@@ -49,7 +49,7 @@ const QuemSou = () => {
         </div>
       </div>
 
-      <div>
+      <div className={styles.art}>
         <div className={styles.textoCirculo + " animaRotate"}>
           <Image
             src="/texto-circulo.svg"
@@ -59,7 +59,14 @@ const QuemSou = () => {
           />
         </div>
 
-        <div className={styles.nomeArte}>VN</div>
+        <div className={styles.nomeArte}>
+          <Image
+          src='/VN.png'
+          alt='Valdisnei nilo logo'
+          width={547}
+          height={203}
+          />
+        </div>
       </div>
     </div>
     <Linha3/>

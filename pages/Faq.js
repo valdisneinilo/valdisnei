@@ -11,6 +11,7 @@ const Faq = () => {
     evt.target.nextElementSibling.classList.toggle("ativo");
   }
   /* faq fim*/
+  
   return (
     <section className={styles.faq} id="faq">
       <h2 className="subtitulo">Perguntas Frequentes</h2>

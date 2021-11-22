@@ -1,8 +1,5 @@
-
 const Linha4 = () => {
-  return (
-    <div className="linha4 animaLeft"></div>
-  )
-}
+  return <div className="linha4 animaLeft"></div>;
+};
 
-export default Linha4
+export default Linha4;

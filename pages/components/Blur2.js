@@ -1,8 +1,5 @@
-
 const Blur2 = () => {
-  return (
-    <div className="ellipse2 animaBlur"></div>
-  )
-}
+  return <div className="ellipse2 animaBlur"></div>;
+};
 
-export default Blur2
+export default Blur2;

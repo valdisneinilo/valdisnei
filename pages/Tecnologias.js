@@ -1,6 +1,6 @@
-import styles from '../styles/Tecnologias.module.css'
-import Blur4 from './components/Blur4'
-import Linha4 from './components/Linha4'
+import styles from "../styles/Tecnologias.module.css";
+import Blur4 from "./components/Blur4";
+import Linha4 from "./components/Linha4";
 
 const Tecnologias = () => {
   return (
@@ -9,10 +9,10 @@ const Tecnologias = () => {
 
       <div className={styles.tecnologiasDiv}>
         <p>
-          A escolha do conjunto de tecnologias faz toda a diferença na
-          hora de “botar a mão na massa”. Construir soluções
-          personalizadas de acordo com a sua necessidade, utilizando o que
-          há de mais sólido e moderno no mercado é a minha especialidade.
+          A escolha do conjunto de tecnologias faz toda a diferença na hora de
+          “botar a mão na massa”. Construir soluções personalizadas de acordo
+          com a sua necessidade, utilizando o que há de mais sólido e moderno no
+          mercado é a minha especialidade.
         </p>
 
         <ul className={styles.listaTec}>
@@ -28,10 +28,10 @@ const Tecnologias = () => {
         <div className={styles.nomeArte2}>Full Stack Developer</div>
       </div>
 
-      <Linha4/>
-      <Blur4/>
+      <Linha4 />
+      <Blur4 />
     </section>
-  )
-}
+  );
+};
 
-export default Tecnologias
+export default Tecnologias;

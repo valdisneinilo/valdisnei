@@ -1,55 +1,59 @@
-.footer{
-  display:flex;
-  max-width:1400px;
-  margin:0 auto;
-  justify-content:space-between
-}
-.footer p{
-  font-family:Inter;
-  font-style:normal;
-  font-weight:500;
-  font-size:12px;
-  line-height:21px;
-  letter-spacing:.2px;
-  padding:65px;
-  text-align:right
-}
-.footer h2{
-  font-family:Monument800;
-  font-style:normal;
-  font-weight:500;
-  font-size:12px;
-  line-height:21px;
-  letter-spacing:.2px;
-  padding:65px
-}
-.footer span{
-  font-family:Monument800
+.footer {
+  display: flex;
+  max-width: 1250px;
+  margin: 0 auto;
+  justify-content: space-between
 }
 
-@media (max-width:1000px){
-  .footer p{
-    font-size:.7rem;
-    line-height:1.2rem;
-    padding:2rem
+.footer p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: .2px;
+  padding: 65px;
+  text-align: right
+}
+
+.footer h2 {
+  font-family: Monument800;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 21px;
+  letter-spacing: .2px;
+  padding: 65px
+}
+
+.footer span {
+  font-family: Monument800
+}
+
+@media (max-width:1000px) {
+  .footer p {
+    font-size: .7rem;
+    line-height: 1.2rem;
+    padding: 2rem
   }
 }
 
-@media (max-width:750px){
-  .footer{
-    display:flex;
-    max-width:17rem ;
-    flex-direction:column
+@media (max-width:750px) {
+  .footer {
+    max-width: 17rem;
+    flex-direction: column
   }
-  .footer p{
-    font-size:12px;
-    line-height:21px;
-    padding:.3rem;
-    max-width:18.75rem;
-    text-align:center;
-    margin:0
+
+  .footer p {
+    font-size: 12px;
+    line-height: 21px;
+    padding: .3rem;
+    max-width: 18.75rem;
+    text-align: center;
+    margin: 0
   }
-  .developer{
-    order:1
+
+  .developer {
+    order: 1
   }
 }

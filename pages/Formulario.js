@@ -1,8 +1,8 @@
-import styles from '../styles/Formulario.module.css'
-import Image from 'next/dist/client/image';
-import { useState } from 'react';
+import styles from "../styles/Formulario.module.css";
+import Image from "next/dist/client/image";
+import { useState } from "react";
 
-import React from 'react'
+import React from "react";
 
 function Formulario() {
   /* Formulário início*/
@@ -195,9 +195,7 @@ function Formulario() {
         </div>
       </div>
     </section>
-
-    
-  )
+  );
 }
 
-export default Formulario
+export default Formulario;

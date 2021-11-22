@@ -1,8 +1,8 @@
-import styles from '../styles/Footer.module.css'
+import styles from "../styles/Footer.module.css";
 
 function Footer() {
   return (
-    <footer className={styles.footer} >
+    <footer className={styles.footer}>
       <p className={styles.developer}>
         Developed by <span>Valdisnei Nilo</span>
       </p>
@@ -11,7 +11,7 @@ function Footer() {
         Design by <span>DECO</span>{" "}
       </p>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

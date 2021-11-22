@@ -1,7 +1,6 @@
-import styles from '../styles/Header.module.css';
+import styles from "../styles/Header.module.css";
 
 const Header = () => {
-
   function initMenuMobile() {
     const menuButton = document.querySelector('[data-menu="button"]');
     menuButton.classList.toggle("active");
@@ -9,7 +8,6 @@ const Header = () => {
     menuList.classList.toggle("menuDisplay");
   }
 
-  
   /*scroll inicio*/
 
   function handleClick(event) {
@@ -52,7 +50,7 @@ const Header = () => {
         </li>
       </ul>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

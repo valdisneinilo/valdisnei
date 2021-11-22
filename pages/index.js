@@ -75,6 +75,7 @@ export default function Home() {
                       alt="Picture of the author"
                       width={30}
                       height={10}
+                      priority
                     />
                   </span>
                 </button>

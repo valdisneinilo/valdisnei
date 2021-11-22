@@ -44,6 +44,7 @@ const QuemSou = () => {
                 alt="Picture of the author"
                 width={20}
                 height={20}
+                priority
               />
             </a>
             </Link>
@@ -58,6 +59,7 @@ const QuemSou = () => {
             alt="Picture of the author"
             width={165.4}
             height={165.27}
+            priority
           />
         </div>
 
@@ -67,6 +69,7 @@ const QuemSou = () => {
           alt='Valdisnei nilo logo'
           width={547}
           height={203}
+          priority
           />
         </div>
       </div>

@@ -36,7 +36,8 @@
   letter-spacing:.2px;
   opacity:.08;
   text-align:right;
-  position:relative
+  position:relative;
+  z-index: 2;
 }
 
 @media (max-width: 1000px){

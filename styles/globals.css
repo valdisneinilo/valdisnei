@@ -116,7 +116,8 @@ img {
   width:35.9375rem;
   height:38.75rem;
   left:10%;top:0;
-  background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);filter:blur(7.375rem)
+  background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);filter:blur(7.375rem);
+  z-index: -1;
 }
 .ellipse2{
   position:absolute;
@@ -124,22 +125,19 @@ img {
   height:38.75rem;
   left:60%;top:50%;
   background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);
-  filter:blur(9.375rem)
+  filter:blur(9.375rem);
+  z-index: -1;
+
 }
-.ellipse3{
-  position:absolute;
-  width:25.9375rem;
-  height:28.75rem;
-  left:40%;top:20%;
-  background:rgba(255,185,186,0.2);
-  filter:blur(6.25rem)
-}
+
 .ellipse4{
   position:absolute;
   width:35.9375rem;
   height:28.75rem;
   left:38%;top:0;
-  background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);filter:blur(8.375rem)
+  background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);filter:blur(8.375rem);
+  z-index: 1;
+
 }
 
 .linha1{
@@ -193,10 +191,6 @@ img {
     top:10%;
     height:10rem
   }
-  .ellipse3{
-    left:30%;
-    top:10%
-  }
   .ellipse4{
     height:10rem;
     left:8%;
@@ -215,7 +209,8 @@ img {
     width:25.9375rem;
     height:18.75rem;
     left:0;
-    top:0
+    top:0;
+    
   }
   .ellipse2{
     position:absolute;
@@ -226,15 +221,7 @@ img {
     background:linear-gradient(292.39deg,rgba(13,251,208,0.2) -16.4%,rgba(13,165,251,0.2) 73.45%);
     filter:blur(9.375rem)
   }
-  .ellipse3{
-    display:none;
-    position:absolute;
-    width:25.9375rem;
-    height:28.75rem;
-    left:40%;top:20%;
-    background:rgba(255,185,186,0.2);
-    filter:blur(6.25rem)
-  }
+
   .ellipse4{
     position:absolute;
     width:10.9375rem;
@@ -305,7 +292,7 @@ img {
   }
 }
 
-.animaRotate {
+/* .animaRotate {
   transform: rotate(360deg);
   animation: animaRotate 20s forwards;
 }
@@ -314,7 +301,7 @@ img {
   to {
     transform: initial;
   }
-}
+} */
 
 .animaLeft {
   transform: translatex(100vh);
@@ -339,7 +326,7 @@ img {
   }
 }
 
-.animaNome {
+/* .animaNome {
   opacity: 0;
   animation: animaNome .5s forwards;
 }
@@ -349,7 +336,7 @@ img {
     opacity: 1;
     transform: initial;
   }
-}
+} */
 
 .active {
   transition: 1s;

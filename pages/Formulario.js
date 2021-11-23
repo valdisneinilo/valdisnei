@@ -2,8 +2,6 @@ import styles from "../styles/Formulario.module.css";
 import Image from "next/dist/client/image";
 import { useState } from "react";
 
-import React from "react";
-
 function Formulario() {
   /* Formulário início*/
   const [nome, setNome] = useState("");

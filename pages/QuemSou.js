@@ -21,12 +21,12 @@ const QuemSou = () => {
             <div>
               <Link
                 href="https://www.linkedin.com/in/valdisnei-nilo-656b67202/"
-                rel="preload"
+                rel="preconnect"
               >
                 <a target="_blank">
                   <Image
                     src="/linkedin.png"
-                    alt="Picture of the author"
+                    alt="Valdisnei Nilo Linkedin"
                     width={19}
                     height={14}
                   />
@@ -35,11 +35,11 @@ const QuemSou = () => {
             </div>
 
             <div>
-              <Link href="https://github.com/valdisneinilo" rel="preload">
+              <Link href="https://github.com/valdisneinilo" rel="preconnect">
                 <a target="_blank">
                   <Image
                     src="/github.png"
-                    alt="Picture of the author"
+                    alt="Valdisnei Nilo Github"
                     width={20}
                     height={20}
                     priority
@@ -54,7 +54,7 @@ const QuemSou = () => {
           <div className={styles.textoCirculo + " animaRotate"}>
             <Image
               src="/texto-circulo.svg"
-              alt="Picture of the author"
+              alt="Valdisnei Nilo arte"
               width={165.4}
               height={165.27}
               priority

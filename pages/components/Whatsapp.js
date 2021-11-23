@@ -6,14 +6,14 @@ const Whatsapp = () => {
     <div className="whatsapp">
       <Link
         href="https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F"
-        rel="preload"
+        rel="preconnect"
       >
         <a target="_blank">
           <Image
-            src="/Frame.svg"
-            alt="Picture of the author"
-            width={30}
-            height={30}
+            src="/Vector.png"
+            alt="Whatsapp Valdisnei Nilo"
+            width={20}
+            height={20}
           />
         </a>
       </Link>

@@ -2,6 +2,7 @@ import styles from "../styles/QuemSou.module.css";
 import Image from "next/dist/client/image";
 import Linha3 from "./components/Linha3";
 import Link from "next/dist/client/link";
+import React from "react";
 
 const QuemSou = () => {
   return (
@@ -23,7 +24,9 @@ const QuemSou = () => {
                 href="https://www.linkedin.com/in/valdisnei-nilo-656b67202/"
                 rel="noreferrer"
               >
-                <a target="_blank">
+                <a target="_blank"
+                  rel="noreferrer"
+                >
                   <Image
                     src="/linkedin.png"
                     alt="Valdisnei Nilo Linkedin"
@@ -36,7 +39,9 @@ const QuemSou = () => {
 
             <div>
               <Link href="https://github.com/valdisneinilo" rel="noreferrer">
-                <a target="_blank">
+                <a target="_blank"
+                  rel="noreferrer"
+                >
                   <Image
                     src="/github.png"
                     alt="Valdisnei Nilo Github"
@@ -63,7 +68,7 @@ const QuemSou = () => {
 
           <div className={styles.nomeArte}>
             <Image
-              src="/VN.png"
+              src="/VN.svg"
               alt="Valdisnei nilo logo"
               width={547}
               height={203}

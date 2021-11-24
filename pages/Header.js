@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div onClick={initMenuMobile}>
-        <div data-menu="button" className={styles.menuButton}></div>
+        <nav data-menu="button" className={styles.menuButton}></nav>
       </div>
       <ul data-menu="list" className={styles.menuList}>
         <li>

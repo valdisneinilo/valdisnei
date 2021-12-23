@@ -18,8 +18,11 @@ import Linha2 from "./components/Linha2";
 
 export default function Home() {
   return (
-
-    <div lang='pt-br' className="corpoSite" style={{ background: "rgb(12, 12, 12)" }}>
+    <div
+      lang="pt-br"
+      className="corpoSite"
+      style={{ background: "rgb(12, 12, 12)" }}
+    >
       <Head>
         <link
           rel="preload"
@@ -95,9 +98,7 @@ export default function Home() {
               href="https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F"
               rel="noreferrer"
             >
-              <a target="_blank"
-                rel="noreferrer"
-              >
+              <a target="_blank" rel="noreferrer">
                 <button>
                   Fale comigo 👋🏻
                   <span>
@@ -124,6 +125,5 @@ export default function Home() {
         <Footer />
       </section>
     </div>
-
   );
 }

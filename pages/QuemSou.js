@@ -24,9 +24,7 @@ const QuemSou = () => {
                 href="https://www.linkedin.com/in/valdisnei-nilo-656b67202/"
                 rel="noreferrer"
               >
-                <a target="_blank"
-                  rel="noreferrer"
-                >
+                <a target="_blank" rel="noreferrer">
                   <Image
                     src="/linkedin.png"
                     alt="Valdisnei Nilo Linkedin"
@@ -39,9 +37,7 @@ const QuemSou = () => {
 
             <div>
               <Link href="https://github.com/valdisneinilo" rel="noreferrer">
-                <a target="_blank"
-                  rel="noreferrer"
-                >
+                <a target="_blank" rel="noreferrer">
                   <Image
                     src="/github.png"
                     alt="Valdisnei Nilo Github"

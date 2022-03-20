@@ -5,7 +5,6 @@ import styles from "../styles/Home.module.css";
 import Header from "./Header";
 
 import QuemSou from "./QuemSou";
-import Faq from "./Faq";
 import Tecnologias from "./Tecnologias";
 import Formulario from "./Formulario";
 import Footer from "./Footer";
@@ -70,7 +69,7 @@ export default function Home() {
         />
         <meta property="og:url" content="https://valdisnei.vercel.app/" />
 
-        <title>Valdisnei Nilo || Desenvolvedor Web</title>
+        <title >Valdisnei Nilo || Desenvolvedor Web</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -83,14 +82,14 @@ export default function Home() {
               <Blur1 />
               <Blur2 />
               <h2>Desenvolvedor Web</h2>
-              <h1>Valdisnei Nilo.</h1>
+              <h1 >Valdisnei Nilo.</h1>
               <Linha1 />
               <Linha2 />
             </div>
           </div>
 
           <div className={styles.chamadaContato}>
-            <p>
+            <p className={styles.introducao}>
               👋 Olá, sou responsável por dar vida ao seu projeto. Quer saber
               como? Clique no botão abaixo. 🙋
             </p>
@@ -98,8 +97,7 @@ export default function Home() {
               href="https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F"
               rel="noreferrer"
             >
-              <a target="_blank" rel="noreferrer">
-                <button>
+                <a className='neon' target="_blank" rel="noreferrer" >
                   Fale comigo 👋🏻
                   <span>
                     <Image
@@ -110,14 +108,13 @@ export default function Home() {
                       priority
                     />
                   </span>
-                </button>
-              </a>
+                </a>
             </Link>
           </div>
 
           <QuemSou />
           <Tecnologias />
-          <Faq />
+          {/* <Faq /> */}
         </section>
       </main>
       <section className="segundaSection">

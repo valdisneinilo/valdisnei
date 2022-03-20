@@ -52,7 +52,7 @@ const QuemSou = () => {
         </div>
 
         <div className={styles.art}>
-          <div className={styles.textoCirculo + " animaRotate"}>
+          <div className={styles.textoCirculo + " spinner"}>
             <Image
               src="/texto-circulo.svg"
               alt="Valdisnei Nilo arte"

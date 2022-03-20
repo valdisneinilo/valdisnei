@@ -18,7 +18,7 @@ const Tecnologias = () => {
         <ul className={styles.listaTec}>
           <li>HTML</li>
           <li>CSS</li>
-          <li>JavaScript</li>
+          <li>TypeScript</li>
           <li>React</li>
           <li>Node</li>
           <li>MySQL</li>

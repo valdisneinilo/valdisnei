@@ -166,6 +166,7 @@ function Formulario() {
               onClick={(e) => {
                 handleSubmit(e);
               }}
+              className='boxMove'
             >
               Iniciar Projeto
               <span>
@@ -183,7 +184,7 @@ function Formulario() {
             <p>Tem alguma pergunta?</p>
             <div>
               <p>
-                <a href="mailto:valdisneidev@gmail.com">contato@valdev.com</a>
+                <a href="mailto:valdisneidev@gmail.com">valdisneinilo@gmail.com</a>
               </p>
               <p>
                 <a href="tel:063991030921">+55 (63) 99103-0921</a>

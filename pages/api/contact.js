@@ -15,9 +15,9 @@ export default function enviar(req, res) {
     .sendMail({
       from: "Valdisnei Nilo <valdisneidev@gmail.com>",
       to: "valdisneidev@gmail.com",
-      subject: `Construção de ${req.body.projeto}`,
+      subject: `Contato site`,
       text: ``,
-      html: `<div>${req.body.nome}</div><div>${req.body.telefone}</div><div>${req.body.email}</div><div>${req.body.projeto}</div>`,
+      html: `<div>${req.body.nome}</div><div>${req.body.telefone}</div><div>${req.body.email}</div>`,
     })
     .then((response) => {
       res.status(200).send(response);

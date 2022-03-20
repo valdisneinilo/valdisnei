@@ -1,48 +1,54 @@
 import styles from "../styles/Formulario.module.css";
 import Image from "next/dist/client/image";
 import { useState } from "react";
+import Swal from 'sweetalert2';
+
+
 
 function Formulario() {
   /* Formulário início*/
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
-  const [projeto, setProjeto] = useState("");
-  const [error, setError] = useState("");
-  const [cor, setCor] = useState(false);
 
   function handleSubmit(e) {
+    e.preventDefault()
     if (
       nome.length === 0 ||
       telefone.length === 0 ||
-      email.length === 0 ||
-      projeto.length === 0
-    ) {
-      setError("Preencha todos os campos");
-      setCor(true);
+      email.length === 0
+      ) {
+      Swal.fire({
+        title: `preencha todos os campos`,
+        html: '',
+        icon: 'error',
+        showConfirmButton: true,
+        timer: 5000,
+      });
+
     } else if (
       nome.length > 0 ||
       telefone.length > 0 ||
-      email.length > 0 ||
-      projeto.length > 0
-    ) {
+      email.length > 0
+      ) {
       e.preventDefault();
       console.log("Enviando");
       let data = {
         nome,
         email,
         telefone,
-        projeto,
       };
 
-      fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      })
+      try {
+
+        fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            Accept: "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
         .then((res) => {
           console.log("Resposta recebida");
           if (res.status === 200) {
@@ -50,19 +56,37 @@ function Formulario() {
             setNome("");
             setEmail("");
             setTelefone("");
-            setProjeto("");
-            setCor(false);
-            setError(
-              "Parabens! o primeiro passo foi dado, em breve entro em contato com você"
-            );
+            Swal.fire({
+              title: `Enviado com sucesso, em breve entro em contato com você`,
+              html: '',
+              icon: 'success',
+              showConfirmButton: false,
+              timer: 2000,
+            });
+
+          }
+          if (res.status === 500) {
+            Swal.fire({
+              title: `Email não enviado, tente novamente`,
+              html: '',
+              icon: 'error',
+              showConfirmButton: true,
+              timer: 5000,
+            });
+
           }
         })
-        .catch((error) => {
-          if (res.status === 500) {
-            res.status(500).send(error);
-            setError("Seu email não foi enviado tente novamente");
-          }
+      } catch (error) {
+        Swal.fire({
+          title: `Email não enviado, tente novamente`,
+          html: '',
+          icon: 'warning',
+          showConfirmButton: true,
+          timer: 5000,
         });
+      }    
+            
+      
     }
   }
   /* Formulário fim */
@@ -122,30 +146,6 @@ function Formulario() {
               value={email}
             />
 
-            <select
-              name="projeto"
-              id="projeto"
-              value={projeto}
-              onChange={(e) => {
-                setProjeto(e.target.value);
-              }}
-              required
-            >
-              <option value="" disabled>
-                Selecione o projeto
-              </option>
-              <option value="landing page">Landing page</option>
-              <option value="site institucional">Site institucional</option>
-              <option value="ecommerce">E-commerce</option>
-              <option value="Sistema Web">Sistema Web</option>
-            </select>
-
-            {error && (
-              <p style={cor ? { color: "red" } : { color: "yellowgreen" }}>
-                {error}
-              </p>
-            )}
-
             {/* span */}
             <label className={styles.nao}>
               Se vc não é um robô, deixe em brancos
@@ -163,9 +163,7 @@ function Formulario() {
             {/* span */}
 
             <button
-              onClick={(e) => {
-                handleSubmit(e);
-              }}
+              onClick={(e) => { handleSubmit(e) }}
               className='boxMove'
             >
               Iniciar Projeto

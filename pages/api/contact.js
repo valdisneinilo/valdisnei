@@ -8,8 +8,7 @@ export default function enviar(req, res) {
     service: 'gmail',
     auth: {
       user: "valdisneidev@gmail.com",
-      pass: process.env.PASS,
-      
+      pass: process.env.PASS
     },
   });
 

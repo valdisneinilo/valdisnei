@@ -8,15 +8,11 @@
     font-family: Inter;
     font-weight: 400;
     font-size: .875rem;
-    line-height: 1.0625rem;
     margin: 0 1.4375rem;
     margin-bottom: 2.5rem;
     cursor: pointer;
 }
 
-.header ul li a{
-    padding: 5px 30px;
-}
 
 
 
@@ -59,7 +55,7 @@
         display: none;
         opacity: 0;
         background-color: #606bd1;
-        max-width: 8.25rem;
+        max-width: 200px;
         z-index: 250;
         padding: 3.125rem 0 .625rem;
         position: fixed;
@@ -70,18 +66,14 @@
     }
     .header ul li {
         font-size: .7rem;
-        line-height: .5rem;
-        margin: .5rem;
         margin-bottom: 1.5rem;
         font-family: Monument400;
-        padding: .5rem;
-        padding-bottom: 1rem;
-        letter-spacing: .1rem;
-        margin-bottom: .875rem;
         background: linear-gradient(92.33deg, #DFFFD7 10.39%, #FF82A7 40.67%);
         background-clip: border-box;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent
+        -webkit-text-fill-color: transparent;
+        width:100%;
     }
+
  
 }

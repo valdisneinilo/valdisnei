@@ -57,17 +57,17 @@ function Formulario() {
             setEmail("");
             setTelefone("");
             Swal.fire({
-              title: `Enviado com sucesso, em breve entro em contato com você`,
+              title: `Email enviado com sucesso, em breve entro em contato com você`,
               html: '',
               icon: 'success',
-              showConfirmButton: false,
-              timer: 2000,
+              showConfirmButton: true,
+              timer: 5000,
             });
 
           }
           if (res.status === 500) {
             Swal.fire({
-              title: `Email não enviado, tente novamente`,
+              title: `Email não enviado, por favor tente novamente`,
               html: '',
               icon: 'error',
               showConfirmButton: true,
@@ -127,6 +127,7 @@ function Formulario() {
               name="telefone"
               autoComplete="off"
               required
+              maxLength={11}
               onChange={(e) => {
                 setTelefone(e.target.value);
               }}

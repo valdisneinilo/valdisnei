@@ -80,14 +80,14 @@
         z-index: 100
     }
     .subtitulo {
-        font-size: 1.01rem;
+        font-size: 1rem;
         margin-bottom: .875rem
     }
     .home {
         width: 17rem
     }
     .tituloContainer h2 {
-        margin-top: 9.25rem;
+        margin-top: 7.25rem;
         font-size: .525rem;
         letter-spacing: 1px;
         padding: .3rem;
@@ -113,7 +113,7 @@
     .chamadaContato button {
         width: 13.375rem;
         height: 3.75rem;
-        z-index: 50
+        z-index: 50;
     }
 }
 @media (max-width: 350px) {

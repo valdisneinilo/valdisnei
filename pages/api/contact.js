@@ -5,6 +5,7 @@ export default function enviar(req, res) {
     host: "smtp.gmail.com",
     port: 465,
     secure: true,
+
     auth: {
       user: "valdisneidev@gmail.com",
       pass: process.env.SECRET,

@@ -9,6 +9,7 @@ export default function enviar(req, res) {
     auth: {
       user: "valdisneidev@gmail.com",
       pass: process.env.PASS,
+      
     },
   });
 

@@ -1,37 +1,29 @@
 import styles from "../styles/Formulario.module.css";
 import Image from "next/dist/client/image";
 import { useState } from "react";
-import Swal from 'sweetalert2';
-
-
+import Swal from "sweetalert2";
+import { LoadingOutlined } from "@ant-design/icons";
 
 function Formulario() {
   /* Formulário início*/
   const [nome, setNome] = useState("");
   const [email, setEmail] = useState("");
   const [telefone, setTelefone] = useState("");
+  const [loading, setLoading] = useState(false);
 
   function handleSubmit(e) {
-    e.preventDefault()
-    if (
-      nome.length === 0 ||
-      telefone.length === 0 ||
-      email.length === 0
-      ) {
+    setLoading(true);
+    e.preventDefault();
+    if (nome.length === 0 || telefone.length === 0 || email.length === 0) {
+      setTimeout(() => setLoading(false), 3000);
       Swal.fire({
         title: `preencha todos os campos`,
-        html: '',
-        icon: 'error',
+        html: "",
+        icon: "error",
         showConfirmButton: true,
         timer: 5000,
       });
-
-    } else if (
-      nome.length > 0 ||
-      telefone.length > 0 ||
-      email.length > 0
-      ) {
-      e.preventDefault();
+    } else if (nome.length > 0 || telefone.length > 0 || email.length > 0) {
       console.log("Enviando");
       let data = {
         nome,
@@ -40,7 +32,6 @@ function Formulario() {
       };
 
       try {
-
         fetch("/api/contact", {
           method: "POST",
           headers: {
@@ -48,8 +39,7 @@ function Formulario() {
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
-        })
-        .then((res) => {
+        }).then((res) => {
           console.log("Resposta recebida");
           if (res.status === 200) {
             console.log("Sucesso na resposta!");
@@ -58,35 +48,33 @@ function Formulario() {
             setTelefone("");
             Swal.fire({
               title: `Email enviado com sucesso, em breve entro em contato com você`,
-              html: '',
-              icon: 'success',
+              html: "",
+              icon: "success",
               showConfirmButton: true,
               timer: 5000,
             });
-
+            setLoading(false);
           }
           if (res.status === 500) {
             Swal.fire({
               title: `Email não enviado, por favor tente novamente`,
-              html: '',
-              icon: 'error',
+              html: "",
+              icon: "error",
               showConfirmButton: true,
               timer: 5000,
             });
-
+            setLoading(false);
           }
-        })
+        });
       } catch (error) {
         Swal.fire({
           title: `Email não enviado, tente novamente`,
-          html: '',
-          icon: 'warning',
+          html: "",
+          icon: "warning",
           showConfirmButton: true,
           timer: 5000,
         });
-      }    
-            
-      
+      }
     }
   }
   /* Formulário fim */
@@ -162,28 +150,37 @@ function Formulario() {
               name="dontchang"
             />
             {/* span */}
-
-            <button
-              onClick={(e) => { handleSubmit(e) }}
-              className='boxMove'
-            >
-              Iniciar Projeto
-              <span>
-                <Image
-                  src="/Arrow.svg"
-                  alt="Picture of the author"
-                  width={30}
-                  height={10}
-                />
-              </span>
-            </button>
+            {loading ? (
+              <button className="boxMove">
+                <LoadingOutlined style={{ fontSize: "3rem" }} />
+              </button>
+            ) : (
+              <button
+                onClick={(e) => {
+                  handleSubmit(e);
+                }}
+                className="boxMove"
+              >
+                Iniciar Projeto
+                <span>
+                  <Image
+                    src="/Arrow.svg"
+                    alt="Picture of the author"
+                    width={30}
+                    height={10}
+                  />
+                </span>
+              </button>
+            )}
           </form>
 
           <div className={styles.contatos}>
             <p>Tem alguma pergunta?</p>
             <div>
               <p>
-                <a href="mailto:valdisneidev@gmail.com">valdisneinilo@gmail.com</a>
+                <a href="mailto:valdisneidev@gmail.com">
+                  valdisneinilo@gmail.com
+                </a>
               </p>
               <p>
                 <a href="tel:063991030921">+55 (63) 99103-0921</a>

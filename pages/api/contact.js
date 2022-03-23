@@ -18,7 +18,11 @@ export default function enviar(req, res) {
     to: "valdisneidev@gmail.com",
     subject: `Contato site`,
     text: ``,
-    html: `<div>${req.body.nome}</div><div>${req.body.telefone}</div><div>${req.body.email}</div>`,
+    html: `
+    <div>${req.body.nome}</div>
+    <div>${req.body.telefone}</div>
+    <div>${req.body.email}</div>
+    `,
   })
   .then((response) => {
     res.status(200).send(response);

@@ -11,7 +11,7 @@ import Footer from "./Footer";
 
 import Blur1 from "./components/Blur1";
 import Blur2 from "./components/Blur2";
-import Whatsapp from "./components/Whatsapp";
+import { WhatsAppOutlined } from "@ant-design/icons";
 import Linha1 from "./components/Linha1";
 import Linha2 from "./components/Linha2";
 
@@ -69,20 +69,29 @@ export default function Home() {
         />
         <meta property="og:url" content="https://valdisnei.vercel.app/" />
 
-        <title >Valdisnei Nilo || Desenvolvedor Web</title>
+        <title>Valdisnei Nilo || Desenvolvedor Web</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="main">
         <Header />
-        <Whatsapp />
+        <div className="whatsapp box">
+          <Link
+            href="https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F"
+            rel="noreferrer"
+          >
+            <a target="_blank" rel="noreferrer">
+              <WhatsAppOutlined />
+            </a>
+          </Link>
+        </div>
         <section className={styles.home}>
           <div className={styles.tituloContainer}>
             <div>
               <Blur1 />
               <Blur2 />
               <h2>Desenvolvedor Web</h2>
-              <h1 >Valdisnei Nilo.</h1>
+              <h1>Valdisnei Nilo.</h1>
               <Linha1 />
               <Linha2 />
             </div>
@@ -97,18 +106,18 @@ export default function Home() {
               href="https://api.whatsapp.com/send?phone=5563991030921&text=Ol%C3%A1%2C%20preciso%20de%20um%20desenvolvedor%20para%20meu%20projeto%2C%20voc%C3%AA%20est%C3%A1%20dispon%C3%ADvel%3F"
               rel="noreferrer"
             >
-                <a className='neon' target="_blank" rel="noreferrer" >
-                  Fale comigo 👋🏻
-                  <span>
-                    <Image
-                      src="/Arrow.svg"
-                      alt="->"
-                      width={30}
-                      height={10}
-                      priority
-                    />
-                  </span>
-                </a>
+              <a className="neon" target="_blank" rel="noreferrer">
+                Fale comigo 👋🏻
+                <span>
+                  <Image
+                    src="/Arrow.svg"
+                    alt="->"
+                    width={30}
+                    height={10}
+                    priority
+                  />
+                </span>
+              </a>
             </Link>
           </div>
 

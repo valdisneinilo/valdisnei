@@ -1,5 +1,4 @@
 import styles from "../styles/Tecnologias.module.css";
-import Blur4 from "./components/Blur4";
 import Linha4 from "./components/Linha4";
 
 const Tecnologias = () => {
@@ -29,7 +28,6 @@ const Tecnologias = () => {
       </div>
 
       <Linha4 />
-      <Blur4 />
     </section>
   );
 };

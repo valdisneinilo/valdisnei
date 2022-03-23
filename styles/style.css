@@ -1,11 +1,8 @@
-@import './globals.css';
-@import './Home.module.css';
-@import './Header.module.css';
-@import './QuemSou.module.css';
-@import './Tecnologias.module.css';
-@import './Faq.module.css';
-@import './Formulario.module.css';
-@import './Footer.module.css';
-
-
-
+@import "./globals.css";
+@import "./Home.module.css";
+@import "./Header.module.css";
+@import "./QuemSou.module.css";
+@import "./Tecnologias.module.css";
+@import "./Faq.module.css";
+@import "./Formulario.module.css";
+@import "./Footer.module.css";

@@ -3,6 +3,7 @@ import Image from "next/dist/client/image";
 import Linha3 from "./components/Linha3";
 import Link from "next/dist/client/link";
 import React from "react";
+import { LinkedinOutlined, GithubOutlined } from "@ant-design/icons";
 
 const QuemSou = () => {
   return (
@@ -25,12 +26,7 @@ const QuemSou = () => {
                 rel="noreferrer"
               >
                 <a target="_blank" rel="noreferrer">
-                  <Image
-                    src="/linkedin.png"
-                    alt="Valdisnei Nilo Linkedin"
-                    width={19}
-                    height={14}
-                  />
+                  <LinkedinOutlined />
                 </a>
               </Link>
             </div>
@@ -38,13 +34,7 @@ const QuemSou = () => {
             <div>
               <Link href="https://github.com/valdisneinilo" rel="noreferrer">
                 <a target="_blank" rel="noreferrer">
-                  <Image
-                    src="/github.png"
-                    alt="Valdisnei Nilo Github"
-                    width={20}
-                    height={20}
-                    priority
-                  />
+                  <GithubOutlined />
                 </a>
               </Link>
             </div>
@@ -63,13 +53,14 @@ const QuemSou = () => {
           </div>
 
           <div className={styles.nomeArte}>
-            <Image
+            {/* <Image
               src="/VN.svg"
               alt="Valdisnei nilo logo"
               width={547}
               height={203}
               priority
-            />
+            /> */}
+            VN
           </div>
         </div>
       </div>

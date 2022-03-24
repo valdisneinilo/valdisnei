@@ -37,12 +37,8 @@ export default function Home() {
         />
         {/* <link rel="preload" href="/_next/static/chunks/main.js?ts=1637698103808" as="script" /> */}
         <link rel="preload" href="Vector.png" as="image" />
-        <link rel="preload" href="VN.svg" as="image" />
         <link rel="preload" href="Arrow.svg" as="image" />
         <link rel="preload" href="favicon.ico" as="image" />
-        <link rel="preload" href="github.png" as="image" />
-        <link rel="preload" href="instagram.png" as="image" />
-        <link rel="preload" href="linkedin.png" as="image" />
         <link rel="preload" href="menu.svg" as="image" />
         <link rel="preload" href="texto-circulo.svg" as="image" />
 

@@ -150,7 +150,7 @@ function Formulario() {
             />
 
             <input
-              type="text"
+              type="tel"
               id="telefone"
               placeholder="Telefone"
               name="telefone"
@@ -162,7 +162,6 @@ function Formulario() {
               }}
               onBlur={(e) => validatePhoneInput(e)}
               value={telefone}
-              inputmode="numeric"
             />
 
             <input

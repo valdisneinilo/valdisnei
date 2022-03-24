@@ -162,6 +162,7 @@ function Formulario() {
               }}
               onBlur={(e) => validatePhoneInput(e)}
               value={telefone}
+              inputmode="numeric"
             />
 
             <input

@@ -28,23 +28,22 @@ const Header = () => {
       </div>
       <ul data-menu="list" className={styles.menuList}>
         <li>
-          <a href="#chamadaContato" onClick={handleClick} className='neonHeader'>
+          <a
+            href="#chamadaContato"
+            onClick={handleClick}
+            className="neonHeader"
+          >
             Sobre Mim
           </a>
         </li>
 
         <li>
-          <a href="#tecnologias" onClick={handleClick} className='neonHeader'>
+          <a href="#tecnologias" onClick={handleClick} className="neonHeader">
             Tecnologias
           </a>
         </li>
         <li>
-          <a href="#faq" onClick={handleClick} className='neonHeader'>
-            FAQ
-          </a>
-        </li>
-        <li>
-          <a href="#contato" onClick={handleClick} className='neonHeader'>
+          <a href="#contato" onClick={handleClick} className="neonHeader">
             Contato
           </a>
         </li>

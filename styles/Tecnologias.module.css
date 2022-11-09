@@ -16,12 +16,14 @@
   margin-right: 50px;
 }
 .listaTec {
+  font-family: Inter;
   text-align: left;
   max-width: 600px;
-  -webkit-column-count: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* -webkit-column-count: 3;
   -moz-column-count: 3;
-  column-count: 3;
-  font-family: Inter;
+  column-count: 3; */
 }
 .listaTec li {
   padding: 10px;
@@ -82,7 +84,7 @@
   }
   .listaTec li {
     padding: 0.3rem;
-    font-size: 1.2rem;
+    font-size: 0.875rem;
   }
   .nomeArte2 {
     max-width: 18rem;

@@ -12,10 +12,10 @@ const QuemSou = () => {
         <div className={styles.quemSouTexto}>
           <h2 className="subtitulo">Quem sou</h2>
           <p>
-            Meu nome é Valdisnei Nilo, trabalho com desenvolvimento de sites e
-            sistemas web. Transformo ideias em resultados através de{" "}
-            <span id="mono"> &#10094; linhas de código, &#10095;</span> sou
-            apaixonado por código e café ☕. Quer saber mais sobre mim? Me
+            Meu nome é Valdisnei Nilo e sou desenvolvedor fullstack. Transformo
+            ideias em resultados através de{" "}
+            <span id="mono"> &#10094; linhas de código &#10095;</span>, sou
+            apaixonado por programação e café ☕. Quer saber mais sobre mim? Me
             acompanhe nas redes. 👇🏻
           </p>
 

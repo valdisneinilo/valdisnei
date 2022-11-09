@@ -17,10 +17,19 @@ const Tecnologias = () => {
         <ul className={styles.listaTec}>
           <li>HTML</li>
           <li>CSS</li>
+          <li>JavaScript</li>
+
           <li>TypeScript</li>
-          <li>React</li>
-          <li>Node</li>
-          <li>MySQL</li>
+          <li>React Js</li>
+          <li>Next Js</li>
+
+          <li>Node Js</li>
+          <li>SQL</li>
+          <li>NoSQL</li>
+
+          <li>Git</li>
+          <li>Docker</li>
+          <li>Linux</li>
         </ul>
       </div>
       <div className={styles.nomeArte2Cont}>

@@ -6,7 +6,7 @@ function Footer() {
       <p className={styles.developer}>
         Developed by <span>Valdisnei Nilo</span>
       </p>
-      <p> Copyright © 2021 Todos os direitos reservados Valdisnei Nilo</p>
+      <p> © {new Date().getFullYear()} Valdisnei Nilo</p>
       <p>
         Design by <span>DECO</span>{" "}
       </p>
